@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedDate="2019-03-19T12:41:40.692332Z" Revision="1" SchemaVersion="1.2" Product="Desktop" BuildID="1f01e648-1924-ec01-df7c-89db268d3edd" BuildInfo="19h1_release.18362.1.190318-1202" OSVersion="10.0.18362.1" BuildArch="amd64" ReleaseType="Production" Type="Build" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+  <Tags Type="Edition">
+    <Tag Name="Edition" Value="coren" />
+    <Tag Name="Language" Value="el-gr" />
+    <Tag Name="UpdateType" Value="Canonical" />
+  </Tags>
+  <Features>
+    <Feature Type="DesktopMedia" FeatureID="coren_el-gr" FMID="MSDE" Group="Microsoft">
+      <Dependencies>
+        <Feature FeatureID="Language.Basic~el-gr~1.0" />
+        <Feature FeatureID="Language.Basic~en-us~1.0" />
+        <Feature FeatureID="Language.Handwriting~el-gr~1.0" />
+        <Feature FeatureID="Language.TextToSpeech~el-gr~1.0" />
+        <Feature FeatureID="Language.OCR~el-gr~1.0" />
+        <Feature FeatureID="Language.OCR~en-us~1.0" />
+        <Feature FeatureID="OneCoreUAP.OneSync~~1.0" />
+        <Feature FeatureID="Hello.Face.18330~~1.0" />
+        <Feature FeatureID="Hello.Face.Migration.18330~~1.0" />
+        <Feature FeatureID="OpenSSH.Client~~1.0" />
+        <Feature FeatureID="MathRecognizer~~1.0" />
+        <Feature FeatureID="App.Support.QuickAssist~~1.0" />
+        <Feature FeatureID="Browser.InternetExplorer~~11.0" />
+      </Dependencies>
+      <Packages>
+        <Package ID="Microsoft-Windows-Client-LanguagePack-Package_el-gr~31bf3856ad364e35~amd64~el-gr~" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-Foundation-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-EditionSpecific-CoreN-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-Client-Desktop-Required-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-Client-Desktop-Required-WOW64-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-Client-Features-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-Client-Features-WOW64-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-EditionPack-Core-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-EditionPack-Core-WOW64-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-Not-Supported-On-LTSB-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-Not-Supported-On-LTSB-WOW64-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft.ModernApps.Client.All" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft.ModernApps.ClientN.All" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-LanguageFeatures-Basic-el-gr-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-LanguageFeatures-Basic-en-us-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-LanguageFeatures-Handwriting-el-gr-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-LanguageFeatures-TextToSpeech-el-gr-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-LanguageFeatures-OCR-el-gr-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-LanguageFeatures-OCR-en-us-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-Hello-Face-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-Hello-Face-Migration-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_OpenSSH-Client-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-TabletPCMath-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-QuickAssist-Package" PackageType="FeaturePackage" />
+        <Package ID="amd64_Microsoft-Windows-InternetExplorer-Optional-Package" PackageType="FeaturePackage" />
+        <Package ID="coren_el-gr_esd" PackageType="MetadataESD" />
+      </Packages>
+    </Feature>
+  </Features>
+  <Packages>
+    <Package ID="Microsoft-Windows-Client-LanguagePack-Package_el-gr~31bf3856ad364e35~amd64~el-gr~" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="wC6eZzaN85gAUhXuaXlL5udTecTgLYE3+IuUo8QS4mE=" PayloadSize="25703238" Path="UUP\Desktop\editionpackages\el-gr\Client\Microsoft-Windows-Client-LanguagePack-Package_el-gr~31bf3856ad364e35~amd64~el-gr~.esd" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-Foundation-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="z2Lxrq3IbvvJ+MpgQShLq0wMBwaR7Xf3QH4KPmGFNzc=" PayloadSize="2676690" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-Foundation-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-EditionSpecific-CoreN-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="H7htF2yDy82iX0v4sy6orJ1pKV1FqGTOTUEBK7X1yhU=" PayloadSize="319153" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-EditionSpecific-CoreN-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-Client-Desktop-Required-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="8tqPwm5j0ALuWtnBep6zP7UnK9K6NBssaZ9dLcyBsqU=" PayloadSize="772202927" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-Client-Desktop-Required-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-Client-Desktop-Required-WOW64-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="SXircfmVHYYOfvozlEYnWgt1LtF8wqUSBOjCklSXWdU=" PayloadSize="197661728" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-Client-Desktop-Required-WOW64-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-Client-Features-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="TOWH8Aqli1p0w+QsSKZkm1kBNCx1PnuGsTI+SivZ8e8=" PayloadSize="298904030" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-Client-Features-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-Client-Features-WOW64-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="m2FI5jBQy9ZtFUw95rqnJUIx6YKfdilxIDF7li7+u1w=" PayloadSize="89666266" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-Client-Features-WOW64-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-EditionPack-Core-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="shOAqxfZix8MpOJz/N9qafsNUJuZiO2bkVUs3RfMYD4=" PayloadSize="118478210" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-EditionPack-Core-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-EditionPack-Core-WOW64-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="Vzh9RIvskvILFdwxRQXQCdNGj2OnJvlEyD7EF3bnWm8=" PayloadSize="11841534" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-EditionPack-Core-WOW64-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-Not-Supported-On-LTSB-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="UVF+vB4+NL3JQUT5AbRs18SaJvkMuEKxGJdmGtXSjKE=" PayloadSize="26886" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-Not-Supported-On-LTSB-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-Not-Supported-On-LTSB-WOW64-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="YGKXA5S//s4XJzFTrMcIGTcMkMXcN7+Jg0uA6pD8p4Y=" PayloadSize="26434296" Path="UUP\Desktop\editionPackages\neutral\Microsoft-Windows-Not-Supported-On-LTSB-WOW64-Package.ESD" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft.ModernApps.Client.All" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="8Gna2UsVYLdfVGH9uprnmVKtoofyHnK1MnUdeO49DM0=" PayloadSize="304106778" Path="UUP\Desktop\Apps\Microsoft.ModernApps.Client.All.esd" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft.ModernApps.ClientN.All" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="QiqQ4cfa7knVj+RLZNuBAAzrgeXLLH0v1HMCmevTFYo=" PayloadSize="259695629" Path="UUP\Desktop\Apps\Microsoft.ModernApps.ClientN.All.esd" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-LanguageFeatures-Basic-el-gr-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="mQphJWnVA3Nu3uwpcGxroC5eRcHFoxMKEpp2ur9DdR0=" PayloadSize="6118744" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-LanguageFeatures-Basic-el-gr-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-LanguageFeatures-Basic-en-us-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="n5Tgfy+k4vXKHGedxiFm3uM3BvyLmSWyP5s1Tsh/GpI=" PayloadSize="21508329" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-LanguageFeatures-Basic-en-us-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-LanguageFeatures-Handwriting-el-gr-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="tEQVuzsHxESz+jOx4IjlIbHKRJHi2JMxXVZq7Zk8r3E=" PayloadSize="3925351" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-LanguageFeatures-Handwriting-el-gr-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-LanguageFeatures-TextToSpeech-el-gr-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="IFljRuDg1xIjMjmq2OLnUt+h7thXmEO02o5u8SVoYo4=" PayloadSize="5235601" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-LanguageFeatures-TextToSpeech-el-gr-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-LanguageFeatures-OCR-el-gr-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="x72RltXrJfo8cGFV4qNSo707AQNg9kQG5uBUlXa7o48=" PayloadSize="193677" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-LanguageFeatures-OCR-el-gr-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-LanguageFeatures-OCR-en-us-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="/9jkusPHoNIh81LX9tp3QYixdczJvfSHXEkH42hFChM=" PayloadSize="156415" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-LanguageFeatures-OCR-en-us-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="vPpqSN3womZQ5Uvxz4CWD9o0ZIvtXlyWPc6XkYGAxFU=" PayloadSize="3364081" Path="FeaturesOnDemand\neutral\cabs\Microsoft-OneCore-ApplicationModel-Sync-Desktop-FOD-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-Hello-Face-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="fhg3NshkLSMAmbkqApTRQiG3mfjMqym6MzW7Un7DbyI=" PayloadSize="38428276" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-Hello-Face-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-Hello-Face-Migration-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="XWbOZpa3a8ZnPIJx8Zr8sS0nPxMLZMfi7tJW7E1Vm7o=" PayloadSize="45805597" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-Hello-Face-Migration-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_OpenSSH-Client-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="TpQtRoaar3HoxexZmCXeVtJt85Hgb0u3oXrD9cool/w=" PayloadSize="1316207" Path="FeaturesOnDemand\neutral\cabs\OpenSSH-Client-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-TabletPCMath-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="9Zaz8W8rQbtXqw9/tEjwsQSinNAA9h/mS2fLlqUUSXo=" PayloadSize="6556549" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-TabletPCMath-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-QuickAssist-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="gGYpOy0TOF1pCsedewtIcRI5zsJ0ICYM6Rt4BO9WsG4=" PayloadSize="404780" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-QuickAssist-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="amd64_Microsoft-Windows-InternetExplorer-Optional-Package" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="GiHbXDnZLkcATyhlsU3MQm5OucPlSC1zoyeMFFrapDk=" PayloadSize="292247" Path="FeaturesOnDemand\neutral\cabs\Microsoft-Windows-InternetExplorer-Optional-Package~31bf3856ad364e35~amd64~~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="coren_el-gr_esd" Version="10.0.18362.1">
+      <Payload>
+        <PayloadItem PayloadHash="eS7K68lht2bCkMOKNybBcoe1kBNqJWS5xhwacpILL6o=" PayloadSize="528972140" Path="MetadataESD\coren_el-gr.esd" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+  </Packages>
+</CompDB>
