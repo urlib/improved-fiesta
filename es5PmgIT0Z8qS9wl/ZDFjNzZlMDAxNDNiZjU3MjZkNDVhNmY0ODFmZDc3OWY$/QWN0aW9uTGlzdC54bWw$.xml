@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ActionList xmlns="urn:schemas-microsoft-com:os-update-actionlist" SessionId="2020-02-12T08:07:00" Revision="1" SessionData="DesktopServicing" BuildInfo="19h1_release.18362.1.190318-1202" CorrelationVector="HrhmVBWdJkSrn+WB.1.3.6.1.3.3" Operation="DesktopServicing">
+    <Downloads>
+        <Package Id="Package_for_RollupFix" Reason="CumulativeUpdate" PayloadType="Canonical" FeatureId="CumulativeUpdate_KB4532693">
+            <Payload Hash="8bFO/dRtVPym7O93AIsN/nwqbglv/sV1MgMTl0Mvkvc=" DownloadSize="359180389" SourceName="Windows10.0-KB4532693-x64.cab"/>
+        </Package>
+    </Downloads>
+    <Plan>
+        <InstallFeature Id="CumulativeUpdate_KB4532693" Group="Microsoft"/>
+    </Plan>
+    <Actions>
+        <InstallPackage Keyform="Package_for_RollupFix~~amd64~~18362.657.1.7" InstalledSize="0" StagedSize="0" FilePath="Windows10.0-KB4532693-x64.cab" Reason="CumulativeUpdate" FeatureId="CumulativeUpdate_KB4532693" Partition="MainOS" BinaryPartition="false"/>
+    </Actions>
+</ActionList>
