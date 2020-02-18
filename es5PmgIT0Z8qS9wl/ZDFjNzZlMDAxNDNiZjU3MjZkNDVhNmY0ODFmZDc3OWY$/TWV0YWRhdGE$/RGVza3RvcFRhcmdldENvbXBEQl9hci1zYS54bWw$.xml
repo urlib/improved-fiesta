@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CompDB xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" CreatedDate="2019-03-19T10:56:28.4239137Z" Revision="1" SchemaVersion="1.2" Product="Desktop" BuildID="1f01e648-1924-ec01-df7c-89db268d3edd" BuildInfo="19h1_release.18362.1.190318-1202" OSVersion="10.0.18362.1" BuildArch="amd64" ReleaseType="Production" Type="Build" xmlns="http://schemas.microsoft.com/embedded/2004/10/ImageUpdate">
+  <Tags Type="Language">
+    <Tag Name="Language" Value="ar-sa" />
+    <Tag Name="UpdateType" Value="Canonical" />
+  </Tags>
+  <Features>
+    <Feature Type="LanguagePack" FeatureID="Language.UI.Client~ar-sa" FMID="MSDL" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-Client-LanguagePack-Package_ar-sa~31bf3856ad364e35~amd64~ar-sa~" PackageType="FeaturePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Microsoft.Onecore.StorageManagement~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-OneCore-StorageManagement-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-OneCore-StorageManagement-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.ActiveDirectory.DS-LDS.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Dependencies>
+        <Feature FeatureID="Rsat.ServerManager.Tools~~1.0" />
+      </Dependencies>
+      <Packages>
+        <Package ID="Microsoft-Windows-ActiveDirectory-DS-LDS-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-ActiveDirectory-DS-LDS-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Microsoft.AdminTools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-AdminTools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-AdminTools-FOD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.BitLocker.Recovery.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Dependencies>
+        <Feature FeatureID="Rsat.ActiveDirectory.DS-LDS.Tools~~1.0" />
+      </Dependencies>
+      <Packages>
+        <Package ID="Microsoft-Windows-BitLocker-Recovery-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.CertificateServices.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-CertificateServices-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.DHCP.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-DHCP-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-DHCP-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.Dns.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-DNS-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-DNS-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.FailoverCluster.Management.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Dependencies>
+        <Feature FeatureID="Rsat.FileServices.Tools~~1.0" />
+      </Dependencies>
+      <Packages>
+        <Package ID="Microsoft-Windows-FailoverCluster-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-FailoverCluster-Management-Tools-FOD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.FileServices.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Dependencies>
+        <Feature FeatureID="Rsat.ServerManager.Tools~~1.0" />
+      </Dependencies>
+      <Packages>
+        <Package ID="Microsoft-Windows-FileServices-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-FileServices-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.GroupPolicy.Management.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-GroupPolicy-Management-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-GroupPolicy-Management-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.IPAM.Client.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Dependencies>
+        <Feature FeatureID="Rsat.ServerManager.Tools~~1.0" />
+      </Dependencies>
+      <Packages>
+        <Package ID="Microsoft-Windows-IPAM-Client-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-IPAM-Client-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Network.Irda~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-IRDA-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-IRDA-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Media.MediaFeaturePack~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-Media-Features-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-Media-Features-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.NetworkController.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-NetworkController-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.NetworkLoadBalancing.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-NetworkLoadBalancing-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="RasCMAK.Client~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-RasCMAK-Client-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-RasCMAK-Client-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="RIP.Listener~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-RasRip-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.RemoteAccess.Management.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Dependencies>
+        <Feature FeatureID="Rsat.GroupPolicy.Management.Tools~~1.0" />
+        <Feature FeatureID="Rsat.ServerManager.Tools~~1.0" />
+      </Dependencies>
+      <Packages>
+        <Package ID="Microsoft-Windows-RemoteAccess-Management-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-RemoteAccess-Management-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.RemoteDesktop.Services.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-RemoteDesktop-Services-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="ServerCore.AppCompatibility~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-Server-AppCompat-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.ServerManager.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-ServerManager-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-ServerManager-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.Shielded.VM.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Dependencies>
+        <Feature FeatureID="Rsat.ServerManager.Tools~~1.0" />
+      </Dependencies>
+      <Packages>
+        <Package ID="Microsoft-Windows-Shielded-VM-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="SNMP.Client~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-SNMP-Client-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-SNMP-Client-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Microsoft.Windows.StorageManagement~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-StorageManagement-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-StorageManagement-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.StorageMigrationService.Management.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-StorageMigrationService-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.StorageReplica.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-StorageReplica-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.SystemInsights.Management.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-SystemInsights-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.VolumeActivation.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-VolumeActivation-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="WMI-SNMP-Provider.Client~~1.0" FMID="MSDN" Group="Microsoft">
+      <Dependencies>
+        <Feature FeatureID="SNMP.Client~~1.0" />
+      </Dependencies>
+      <Packages>
+        <Package ID="Microsoft-Windows-WMI-SNMP-Provider-Client-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+        <Package ID="Microsoft-Windows-WMI-SNMP-Provider-Client-Package~31bf3856ad364e35~wow64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+    <Feature Type="OnDemandFeature" FeatureID="Rsat.WSUS.Tools~~1.0" FMID="MSDN" Group="Microsoft">
+      <Packages>
+        <Package ID="Microsoft-Windows-WSUS-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" PackageType="SatellitePackage" />
+      </Packages>
+    </Feature>
+  </Features>
+  <Packages>
+    <Package ID="Microsoft-Windows-Client-LanguagePack-Package_ar-sa~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="240729307" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <DeclareInfo>
+          <Declare Type="language" Value="ar-SA" />
+        </DeclareInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="Odx9yZgoWc+EyzSz+zLlt66zS5mWr9pfk1jCdjLYFx8=" PayloadSize="24863107" Path="UUP\Desktop\editionpackages\ar-sa\client\Microsoft-Windows-Client-LanguagePack-Package_ar-sa~31bf3856ad364e35~amd64~ar-sa~.esd" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-OneCore-StorageManagement-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="1948065" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="TMjCIMtmBlVrCBTGboxTX4NT3+uyIejVvsA+6LljDb8=" PayloadSize="124005" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-OneCore-StorageManagement-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-OneCore-StorageManagement-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="1072934" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="oJs0HurgdnbPb6jhD0sJnU/gWAMeGABMr90JdHVJy8A=" PayloadSize="80598" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-OneCore-StorageManagement-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-ActiveDirectory-DS-LDS-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="5697115" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="i3+cwco9Ec+9Mei3dXoRafr5SyOkbWk1/7Tp/42I/tc=" PayloadSize="776633" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-ActiveDirectory-DS-LDS-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-ActiveDirectory-DS-LDS-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="787584" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="oQnJThokvH3tkYm+Q+iNpwOBgFA6gnKCjNqNY33yKvM=" PayloadSize="99737" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-ActiveDirectory-DS-LDS-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-AdminTools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="9885280" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="WgVA4+wCiVeFvNSKAayu1p6oU3VdXwDv2CZ4+u9bDZQ=" PayloadSize="1207273" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-AdminTools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-AdminTools-FOD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="2241191" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="ROtecDVSnk1+3Qon7GPY/vBgpy3FOqtY6v1GLZ6Vze8=" PayloadSize="304338" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-AdminTools-FOD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-BitLocker-Recovery-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="31653" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="hv+qRLxbR9hyy2Ff2Gb0BF4tOor8MkgAx/sO+5Q3lHQ=" PayloadSize="21276" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-BitLocker-Recovery-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-CertificateServices-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="995733" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="YX1paMd3POiz6y63XGtqc48259SNZl9GKGo0bNby+o8=" PayloadSize="143370" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-CertificateServices-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-DHCP-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="1797236" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="IivREQGE6a7aAHOGQTuOR3Hu389QjgBSD/R8Sp8wsVw=" PayloadSize="155468" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-DHCP-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-DHCP-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="479363" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="PEy+nXE+qB7yubsoOsp6Uwua2ldmPdYXxZZQt5iB1/8=" PayloadSize="57481" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-DHCP-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-DNS-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="1900645" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="Pl+dbvb00lvAslKR71tHdCSvUu+SZ2W8FylpqQjNtZk=" PayloadSize="173166" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-DNS-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-DNS-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="12489" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="V27rN4uxslWzGcLSJBBtDeT1EvPOUOgarC1Gzl0L+Nc=" PayloadSize="17277" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-DNS-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-FailoverCluster-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="8882414" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="CuoWCkK4Nbbrv4kAyFDroe6ve6rNuqN1amX0RRERY3k=" PayloadSize="2337930" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-FailoverCluster-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-FailoverCluster-Management-Tools-FOD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="71574" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="jad4D4r1kpMUWt3t03ZtqYMhCd5tLo/qhSsN847u9dA=" PayloadSize="29912" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-FailoverCluster-Management-Tools-FOD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-FileServices-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="4132185" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="OboXUByyW4NeL1qq3/sJPGO0wTrQeN2B5F5+dnnjwOk=" PayloadSize="542949" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-FileServices-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-FileServices-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="171379" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="LUSwMi6g5v5NkrMg4jJNtsHxXRB9/NLLkBQFtmrikV0=" PayloadSize="43221" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-FileServices-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-GroupPolicy-Management-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="2251572" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="XNQeNU9QNzww+8qZtmTBgon1E/Xz0tKVQILF5Y4+WZk=" PayloadSize="273715" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-GroupPolicy-Management-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-GroupPolicy-Management-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="306118" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="r7xL1w6VHvC88ycubvp3LweEKzyOvDW4PcP+ZpJ2m50=" PayloadSize="55439" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-GroupPolicy-Management-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-IPAM-Client-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="98934" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="xUnYS11G5iargMRNUQzDjLA5RQN/LuEkwGo0thjhgLU=" PayloadSize="28503" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-IPAM-Client-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-IPAM-Client-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="23574" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="XDE+ooc5/sZ7vyhUqN8BDC9ZVYkKpLI8TaKxVUZwkXw=" PayloadSize="19746" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-IPAM-Client-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-IRDA-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="55859" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="GVQJoq4Ebr7f6YpvoLIDmU0bwp3i/Ko1yAZ+cTZfZXo=" PayloadSize="28895" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-IRDA-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-IRDA-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="11332" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="OwcFuAQNinFX6ybNfa3PcPh+GSAZ/FwiMtrKCwMAMTU=" PayloadSize="16370" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-IRDA-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-Media-Features-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="1640462" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="6+JF1hLoZMHdJ4GFdJZbyIaDHIeykAlM3JuDAl+bG8w=" PayloadSize="275737" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-Media-Features-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-Media-Features-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="353229" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="Wwhy37gEJ7lBYc+ZnTdYPv+pu1FvvrvlPnTK2GNE7/0=" PayloadSize="80013" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-Media-Features-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-NetworkController-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="66734" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="iI2UD4sLNA4uTwg9rPYrTiJyyNyuF7ap1EENTJPSU3g=" PayloadSize="32411" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-NetworkController-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-NetworkLoadBalancing-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="234953" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="7/ot5gUTYOggiT6szPUJMDVdieoswt114XF/P1RZy/k=" PayloadSize="49127" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-NetworkLoadBalancing-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-RasCMAK-Client-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="238793" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="kRSkSxpMS0d8HiFi49C0qOEtqQrdtU2Utj4R3zGPHY0=" PayloadSize="78268" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-RasCMAK-Client-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-RasCMAK-Client-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="413742" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="5LaSNWet8YNLvY+OE44AYsRwsc2S/Y9jUGpsoAWQMM8=" PayloadSize="276549" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-RasCMAK-Client-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-RasRip-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="25208" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="3ySoiYiDJZwiALEg/XEjn2etNpukQf5HGePk1W6dh0Y=" PayloadSize="19797" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-RasRip-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-RemoteAccess-Management-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="18531251" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="e6uMs9/ng7bQQb86iKgolOJ7mMfy2MCQzGUVz6LOBzA=" PayloadSize="4010326" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-RemoteAccess-Management-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-RemoteAccess-Management-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="12836" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="07SFCs+AMGHAksvol3TCHcD0zm7YCMeZs5H7CdtmJ+o=" PayloadSize="17339" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-RemoteAccess-Management-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-RemoteDesktop-Services-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="1497518" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="ybG9kHNio2Yf2rJag/1z3QmMtCbynhTCUJELV5mWUEM=" PayloadSize="245713" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-RemoteDesktop-Services-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-Server-AppCompat-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="29996656" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="aL9BkDM/94588AP8KbxTqNXaiWwDci21nGdm1O4/qUA=" PayloadSize="7112399" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-Server-AppCompat-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-ServerManager-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="11024200" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="e1iHQrRGN0jTCVP0rht5Q4TSjEHM80ShYo0Saeym4lU=" PayloadSize="1877111" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-ServerManager-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-ServerManager-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="1195590" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="IscmjZ9bc+T1qwExXyDkOU35d1asfiMEw8Ks4eZr2NI=" PayloadSize="310820" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-ServerManager-Tools-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-Shielded-VM-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="365803" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="sUv4WKTl2Rg2Odpj2wr00PSinVGH2KOvQy65sZGpPiQ=" PayloadSize="94966" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-Shielded-VM-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-SNMP-Client-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="141565" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="PBe7vqCXdwbRZAFqcDrex45jKFECzk+DlMcD0utu+C4=" PayloadSize="43779" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-SNMP-Client-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-SNMP-Client-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="140922" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="RvhLjrBZ1K/ieD4zaiJ0F74SHTH5H4rN0Tf4ROJXlrE=" PayloadSize="43335" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-SNMP-Client-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-StorageManagement-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="1598539" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="Qh7jBX+979hlbNXduZ5LFRdsRGncJ8MrnB1+/VXf68w=" PayloadSize="120741" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-StorageManagement-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-StorageManagement-FoD-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="1107411" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="9iUNvEu4aS9jJ1dC0B3/cclnMQ/e69R0egTAYUYcCTY=" PayloadSize="88842" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-StorageManagement-FoD-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-StorageMigrationService-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="70767" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="b6Otg2IV0aAEsFmcYAR9J8xDl9WthE8VEMmqCypnjVs=" PayloadSize="31085" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-StorageMigrationService-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-StorageReplica-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="394694" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="mOo4/FIHZZwIgUbsgOWqLgbWH4HLrYIAGmiCqHjW5TA=" PayloadSize="63009" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-StorageReplica-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-SystemInsights-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="39888" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="fe42NJEil13oitFETEKsresFBpNFWRbPDqR2nYb6M4Q=" PayloadSize="24362" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-SystemInsights-Management-Tools-FOD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-VolumeActivation-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="223158" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="JATKfj822ypqZw/hORAyb91Owk8lDpO5ANoyoaTFxMA=" PayloadSize="138469" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-VolumeActivation-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-WMI-SNMP-Provider-Client-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="53642" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="o9Dm6CNGO5gxZmkq5U1f4L99mjBxwQ7DWPCWPdesVVM=" PayloadSize="26261" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-WMI-SNMP-Provider-Client-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-WMI-SNMP-Provider-Client-Package~31bf3856ad364e35~wow64~ar-sa~" InstalledSize="53322" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="arch" Value="wow64" />
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="2A1kIisnzRlBNnSXJXhMFlZkZ/9X/BU1wxBN4bJOSkw=" PayloadSize="25959" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-WMI-SNMP-Provider-Client-Package~31bf3856ad364e35~wow64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+    <Package ID="Microsoft-Windows-WSUS-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~" InstalledSize="2921250" Version="10.0.18362.1">
+      <SatelliteInfo>
+        <ApplyToInfo>
+          <ApplyTo Type="language" Value="ar-SA" />
+        </ApplyToInfo>
+      </SatelliteInfo>
+      <Payload>
+        <PayloadItem PayloadHash="NUl2P1vIzVk9zOEUbYisWmjFmhanxZ0xPABBBQ/KKb0=" PayloadSize="354786" Path="FeaturesOnDemand\ar-sa\cabs\Microsoft-Windows-WSUS-Tools-FoD-Package~31bf3856ad364e35~amd64~ar-sa~.cab" PayloadType="Canonical" />
+      </Payload>
+    </Package>
+  </Packages>
+</CompDB>
