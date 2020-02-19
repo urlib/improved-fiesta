@@ -1,0 +1,1652 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#1a73e8">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/web/progressive-web-apps"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Progressive Web Apps &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Progressive Web Apps &nbsp;|&nbsp; Google Developers">
+  <meta name="description" content="Progressive Web Apps are now supported on the desktop!">
+  <meta property="og:description" content="Progressive Web Apps are now supported on the desktop!">
+
+  
+  <meta property="og:url" content="https://developers.google.com/web/progressive-web-apps">
+
+  <meta property="og:image" content="/web/images/social-webfu-16x9.png">
+  <meta property="og:image:secure_url" content="/web/images/social-webfu-16x9.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+    </head>
+  <body type="landing"
+        theme="google-blue"
+        class=""
+        
+        layout="full"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/web">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Web"
+         src="/web/images/web-fundamentals-icon192x192.png"
+         srcset="https://developers.google.com/web/images/web-fundamentals-icon192x192_36.png 36w,https://developers.google.com/web/images/web-fundamentals-icon192x192_48.png 48w,https://developers.google.com/web/images/web-fundamentals-icon192x192_72.png 72w,https://developers.google.com/web/images/web-fundamentals-icon192x192_96.png 96w,https://developers.google.com/web/images/web-fundamentals-icon192x192_480.png 480w,https://developers.google.com/web/images/web-fundamentals-icon192x192_720.png 720w,https://developers.google.com/web/images/web-fundamentals-icon192x192_856.png 856w,https://developers.google.com/web/images/web-fundamentals-icon192x192_960.png 960w,https://developers.google.com/web/images/web-fundamentals-icon192x192_1440.png 1440w,https://developers.google.com/web/images/web-fundamentals-icon192x192_1920.png 1920w,https://developers.google.com/web/images/web-fundamentals-icon192x192_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/web"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <h1 class="devsite-product-name">Web</h1>        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                            <devsite-tabs class="upper-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  >
+            <a href="/web/fundamentals"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="fundamentals"
+           data-category="webFu"
+        data-label="upper-webfu"
+   >
+  Fundamentals
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/tools"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="tools"
+           data-category="webFu"
+        data-label="upper-tools"
+   >
+  Tools
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/updates"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="updates"
+           data-category="webFu"
+        data-label="upper-updates"
+   >
+  Updates
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/showcase"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="caseStudies"
+           data-category="webFu"
+        data-label="upper-showcase"
+   >
+  Case Studies
+</a>
+
+          </tab>
+                                <tab  active>
+            <a href="/web/progressive-web-apps"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="progressiveWebApps"
+   aria-label="Progressive Web Apps, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Progressive Web Apps"
+   >
+  Progressive Web Apps
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Web"    tenant-name="Google Developers"    project-scope="/web"    url-scoped="https://developers.google.com/s/results/web"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                         ></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+          devsite-header-no-lower-tabs
+    ">
+    <div class="devsite-header-background">
+                        <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+                                                <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/web/progressive-web-apps"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Lower Header"
+              data-value="1"
+          >
+            Progressive Web Apps
+      
+  </a>
+        </li>
+  </ul>
+                                                              <div class="devsite-product-description">Progressive Web Apps are now supported on the desktop!</div>
+  
+                          </div>
+                                                                      <div class="devsite-product-button-row">
+      <a href="/web/progressive-web-apps/desktop"
+            class="button                          "
+            >Desktop PWAs</a></div>
+                                    </div>
+                                  </div>  </div></div>
+  
+
+  </devsite-header>      <devsite-book-nav scrollbars hidden>
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/web">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Web"
+         src="/web/images/web-fundamentals-icon192x192.png"
+         srcset="/web/images/web-fundamentals-icon192x192_36.png 36w, /web/images/web-fundamentals-icon192x192_48.png 48w, /web/images/web-fundamentals-icon192x192_72.png 72w, /web/images/web-fundamentals-icon192x192_96.png 96w, /web/images/web-fundamentals-icon192x192_480.png 480w, /web/images/web-fundamentals-icon192x192_720.png 720w, /web/images/web-fundamentals-icon192x192_856.png 856w, /web/images/web-fundamentals-icon192x192_960.png 960w, /web/images/web-fundamentals-icon192x192_1440.png 1440w, /web/images/web-fundamentals-icon192x192_1920.png 1920w, /web/images/web-fundamentals-icon192x192_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/web"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <h1 class="devsite-product-name">Web</h1>        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+                  <a href="/web/fundamentals"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Fundamentals"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="fundamentals">
+      <span class="devsite-nav-text" tooltip >
+      Fundamentals
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/tools"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Tools"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="tools">
+      <span class="devsite-nav-text" tooltip >
+      Tools
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/updates"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Updates"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="updates">
+      <span class="devsite-nav-text" tooltip >
+      Updates
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/showcase"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Case Studies"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="caseStudies">
+      <span class="devsite-nav-text" tooltip >
+      Case Studies
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/progressive-web-apps"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Progressive Web Apps"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="progressiveWebApps">
+      <span class="devsite-nav-text" tooltip >
+      Progressive Web Apps
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  
+                                        </li>
+                    
+                  </ul>
+          </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+                        >
+          <devsite-toc class="devsite-nav"
+            disabled></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner"><style>
+        /* Styles inlined from /web/progressive-web-apps/styles/wf-pwa.css */
+ul.checkmarks {
+  list-style-type:none;
+  padding:0;
+}
+
+ul.checkmarks li {
+  background-image:url("//developers.google.com/maps/images/lhimages/compare-yes.svg");
+  background-repeat:no-repeat;
+  background-position:0 1px;
+  padding-left:30px;
+}
+
+ul.checkmarks li:first-of-type {
+  margin-top: 0;
+}
+
+ul.checkmarks li > a {
+  font-weight: bold;
+}
+
+.pwaMarginHack {
+  padding-top: 40px;
+}
+
+#dive-deeper {
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 1000px) {
+  .devsite-landing-page .devsite-product-description-row {
+    max-width: none;
+  }
+}
+
+.devsite-landing-page .devsite-product-description-row {
+  max-width: calc((100% - 80px)*2/3);
+}
+
+.wf-header-title {
+  margin-top: 20px;
+}
+
+        </style>          <div class="devsite-banner devsite-banner-announcement"
+           >
+        <div class="devsite-banner-message">
+          <div class="devsite-banner-message-text">
+            <style>
+  .devsite-banner-announcement {
+    background-color: #e8f0fe;
+    color: #424242;
+
+  }
+  .devsite-banner-announcement :link,
+  .devsite-banner-announcement :visited {
+    background: #e8f0fe;
+    color: #039BE5;
+  }
+  .devsite-banner-announcement span.material-icons {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+</style> Didn't make the <code>#ChromeDevSummit</code> this year? Catch all the content (and more!) in the <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIDA1uGhqy45bqlul0VcvKMr">Chrome Dev Summit 2019</a> playlist on our <a href="https://www.youtube.com/user/ChromeDevelopers/">Chrome Developers YouTube Channel</a>.
+
+          </div>
+        </div>
+      </div>
+        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/web"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Web
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/web/progressive-web-apps"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="4"
+          >
+            Progressive Web Apps
+      
+  </a>
+        </li>
+  </ul>
+          </div>
+
+        
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 disabled>
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+                <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50 devsite-landing-row-no-image-background"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <iframe class="devsite-embedded-youtube-video"
+        allowfullscreen=""
+        data-autohide="1"
+        data-showinfo="0"
+        data-video-id="2KhRmFHLuhE"
+        frameborder="0"></iframe>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <p>
+  Progressive Web Apps are user experiences that have the reach of
+  the web, and are:
+</p> <ul>
+  <li>
+    <a href="#reliable"><b>Reliable</b></a> - Load instantly and never
+    show the downasaur, even in uncertain network conditions.
+  </li>
+  <li>
+    <a href="#fast"><b>Fast</b></a> - Respond quickly to user
+    interactions with silky smooth animations and no janky scrolling.
+  </li>
+  <li>
+    <a href="#engaging"><b>Engaging</b></a> - Feel like a natural app
+    on the device, with an immersive user experience.
+  </li>
+</ul> <p>
+  This new level of quality allows Progressive Web Apps to earn a
+  place on the user's home screen.
+</p>
+
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50 devsite-landing-row-no-image-background"
+               background="grey"
+  
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+                devsite-landing-row-item-media-left
+  ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/progressive-web-apps/images/pwa-reliable.png"
+       srcset="https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_36.png 36w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_48.png 48w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_72.png 72w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_96.png 96w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_480.png 480w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_720.png 720w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_856.png 856w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_960.png 960w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_1440.png 1440w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_1920.png 1920w,https://developers.google.com/web/progressive-web-apps/images/pwa-reliable_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="reliable">
+      Reliable</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            <p>
+  When launched from the user’s home screen, service workers enable a
+  Progressive Web App to load instantly, regardless of the network
+  state.
+</p> <p>
+  A service worker, written in JavaScript, is like a client-side proxy
+  and puts you in control of the cache and how to respond to resource
+  requests. By pre-caching key resources you can eliminate the
+  dependence on the network, ensuring an instant and reliable
+  experience for your users.
+</p>
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/fundamentals/getting-started/primers/service-workers"
+      class="button button-white
+      "
+            >Learn more</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50 devsite-landing-row-no-image-background pwaMarginHack"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/progressive-web-apps/images/pwa-fast.png"
+       srcset="https://developers.google.com/web/progressive-web-apps/images/pwa-fast_36.png 36w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_48.png 48w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_72.png 72w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_96.png 96w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_480.png 480w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_720.png 720w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_856.png 856w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_960.png 960w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_1440.png 1440w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_1920.png 1920w,https://developers.google.com/web/progressive-web-apps/images/pwa-fast_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="fast">
+      Fast</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            53% of users will abandon a site if it takes longer than 3 seconds to load! And once loaded, users expect them to be fast—no janky scrolling or slow-to-respond interfaces.
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/fundamentals/performance"
+      class="button button-white
+      "
+            >Learn more</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50 devsite-landing-row-no-image-background"
+               background="grey"
+  
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+                devsite-landing-row-item-media-left
+  ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/progressive-web-apps/images/pwa-engaging.png"
+       srcset="https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_36.png 36w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_48.png 48w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_72.png 72w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_96.png 96w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_480.png 480w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_720.png 720w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_856.png 856w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_960.png 960w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_1440.png 1440w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_1920.png 1920w,https://developers.google.com/web/progressive-web-apps/images/pwa-engaging_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="engaging">
+      Engaging</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            <p>
+  Progressive Web Apps are installable and live on the user's
+  <b>home screen</b>, without the need for an app store. They
+  offer an <b>immersive full screen</b> experience with help from a
+  web app manifest file and can even re-engage users with web
+  <b>push notifications</b>.
+</p> <p>
+  The Web App Manifest allows you to control how your app appears and
+  how it's launched. You can specify home screen icons, the page to load
+  when the app is launched, screen orientation, and even whether or not
+  to show the browser chrome.
+</p>
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/fundamentals/engage-and-retain/web-app-manifest"
+      class="button button-white
+      "
+            >Web App Manifest</a>    <a href="/web/fundamentals/engage-and-retain/push-notifications"
+      class="button button-white
+      "
+            >Web Push Notifications</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-100"
+           
+           >
+
+          <header class="devsite-landing-row-header">
+            <div class="devsite-landing-row-header-text">
+
+                    <h2 id="why-build-a-progressive-web-app">
+      Why build a Progressive Web App?</h2>
+    
+    
+
+              </div>
+      
+          </header>
+    
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            Building a high-quality Progressive Web App has incredible benefits, making it easy to delight your users, grow engagement and increase conversions.
+
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-2-up"
+           
+           >
+
+      
+          <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-column">
+          
+                                <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <ul class="checkmarks">
+  <li>
+    <a href="/web/fundamentals/app-install-banners">
+    Worthy of being on the home screen</a><br>
+    When the Progressive Web App criteria are met, Chrome prompts
+    users to add the Progressive Web App to their home screen.
+  </li>
+  <li>
+    <a href="/web/showcase/2016/konga">
+    Work reliably, no matter the network conditions</a><br>
+    Service workers enabled Konga to send 63% less data for
+    initial page loads, and 84% less data to complete the first
+    transaction!
+  </li>
+</ul>
+
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+                  </div>
+              <div class="devsite-landing-row-column">
+          
+                                <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <ul class="checkmarks">
+  <li>
+    <a href="/web/showcase/2016/extra">Increased engagement</a><br>
+    Web push notifications helped eXtra Electronics increase
+    engagement by 4X. And those users spend twice as much time on
+    the site.
+  </li>
+  <li>
+    <a href="/web/showcase/2016/aliexpress">Improved conversions</a><br>
+    The ability to deliver an amazing user experience helped AliExpress
+    improve conversions for new users across all browsers by 104%
+    and on iOS by 82%.
+  </li>
+</ul>
+
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+                  </div>
+            </div>
+
+        
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50 devsite-landing-row-no-image-background"
+               background="grey"
+  
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse.png"
+       srcset="https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_36.png 36w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_48.png 48w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_72.png 72w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_96.png 96w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_480.png 480w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_720.png 720w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_856.png 856w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_960.png 960w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_1440.png 1440w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_1920.png 1920w,https://developers.google.com/web/progressive-web-apps/images/pwa-lighthouse_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="lighthouse">
+      Lighthouse</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Lighthouse, an open-source, automated tool for improving the quality of your Progressive Web Apps, eliminates much of the manual testing that was previously required. You can even use Lighthouse in continuous integration systems to catch regressions.
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/tools/lighthouse"
+            class="button             button-white             "
+            >Learn more</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-2-up pwaMarginHack"
+           
+           >
+
+          <header class="devsite-landing-row-header">
+            <div class="devsite-landing-row-header-text">
+
+                    <h2 id="dive-deeper">
+      Dive Deeper</h2>
+    
+    
+
+              </div>
+      
+          </header>
+    
+          <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-column">
+          
+                                <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <ul>
+  <li>
+    <a href="/web/progressive-web-apps/checklist">Progressive Web App Checklist</a><br>
+    This checklist breaks down all the things we think it takes to
+    be a Progressive Web App.
+  </li>
+  <li>
+    <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIAWWNR_Q6eLPhsyx6VvYjVb">
+      Progressive Web App Dev Summit Videos
+    </a><br>Videos and behind-the-scenes insight from the first-ever PWA summit.
+  </li>
+  <li>
+    <a href="/web/fundamentals/security/encrypt-in-transit/why-https">
+      Move to HTTPS
+    </a>
+    <br>Progressive Web Apps must be served from a secure origin.
+  </li>
+  <li>
+    <a href="/web/fundamentals/security/prevent-mixed-content/fixing-mixed-content">
+      Preventing Mixed Content
+    </a><br>Finding and preventing mixed content is vital to ensuring a secure origin.
+  </li>
+</ul>
+
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+                  </div>
+              <div class="devsite-landing-row-column">
+          
+                                <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <ul>
+  <li>
+    <a href="/web/progressive-web-apps/desktop">
+      Progressive Web Apps on Desktop
+    </a><br>Progressive Web Apps now work on all desktop platforms.
+  </li>
+  <li>
+    <a href="/web/fundamentals/app-install-banners">
+      App Install Banners
+    </a><br>Chrome uses a set of criteria and visit frequency
+    heuristics to determine when to show the banner.
+  </li>
+  <li>
+    <a href="/web/tools/lighthouse/">
+      Lighthouse
+    </a><br>Lighthouse is an open-source, automated tool for
+    improving the quality of your web apps.
+  </li>
+  <li>
+    <a href="http://stackoverflow.com/questions/tagged/progressive-web-apps">
+      Get Support
+    </a><br>Get your questions answered on Stack Overflow.
+  </li>
+</ul>
+
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+                  </div>
+            </div>
+
+        
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-cta"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="start-developing-today">
+      Start developing today</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Write your first Progressive Web App with our step-by-step code lab.
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="https://g.co/codelabs/pwa"
+      class="button
+      "
+            >Get started</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+
+          </div>
+
+    
+    
+          </article>
+</article>
+
+
+  <devsite-google-survey type="gcs" site-id=ylj5ifxusvvmr4pp6ae5lwrctq></devsite-google-survey>
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="https://blog.chromium.org"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 1)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/chrome_chromium_64dp.png"
+             alt="Chromium Blog">
+                Chromium Blog
+      </a>
+      <div class="devsite-footer-promo-description">The latest news on the Chromium blog.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://github.com/googlechrome"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 2)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-github.svg"
+             alt="GitHub">
+                GitHub
+      </a>
+      <div class="devsite-footer-promo-description">Fork our code samples and other open-source projects.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://twitter.com/chromiumdev"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 3)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-twitter.svg"
+             alt="Twitter">
+                Twitter
+      </a>
+      <div class="devsite-footer-promo-description">Connect with @ChromiumDev on Twitter.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="/web/shows"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 4)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/youtube_64dp.png"
+             alt="Videos">
+                Videos
+      </a>
+      <div class="devsite-footer-promo-description">Check out our videos.</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Key Topics</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/billions"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Building for Billions
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developers.chrome.com/extensions/api_index"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Chrome Extension Docs
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/site-kit"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Site-Kit
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/feedback"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Developer Feedback Program
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/progressive-web-apps"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Progressive Web Apps
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Training and Partners</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/ilt"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Instructor Led Training
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/shows/udacity"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Web Courses at Udacity
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/agencies"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Agencies
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Contribute</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://github.com/google/WebFundamentals/issues"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            File an Issue
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://github.com/google/WebFundamentals"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            View Page Source
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/resources"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Resources
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/resources/translations"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Translating
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link">
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link">
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link">
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Web", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}, {"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Web", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-52746336-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
