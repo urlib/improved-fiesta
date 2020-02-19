@@ -1,0 +1,1647 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#1a73e8">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/web/updates"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Updates &nbsp;|&nbsp; Web &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Updates &nbsp;|&nbsp; Web &nbsp;|&nbsp; Google Developers">
+  <meta name="description" content="The latest and freshest updates from the Web teams at Google. Chrome, V8, tooling, and more.">
+  <meta property="og:description" content="The latest and freshest updates from the Web teams at Google. Chrome, V8, tooling, and more.">
+
+  
+  <meta property="og:url" content="https://developers.google.com/web/updates">
+
+  <meta property="og:image" content="/web/images/social-webfu-16x9.png">
+  <meta property="og:image:secure_url" content="/web/images/social-webfu-16x9.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+    </head>
+  <body type="landing"
+        theme="google-blue"
+        class=""
+        
+        layout="full"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/web">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Web"
+         src="/web/images/web-fundamentals-icon192x192.png"
+         srcset="https://developers.google.com/web/images/web-fundamentals-icon192x192_36.png 36w,https://developers.google.com/web/images/web-fundamentals-icon192x192_48.png 48w,https://developers.google.com/web/images/web-fundamentals-icon192x192_72.png 72w,https://developers.google.com/web/images/web-fundamentals-icon192x192_96.png 96w,https://developers.google.com/web/images/web-fundamentals-icon192x192_480.png 480w,https://developers.google.com/web/images/web-fundamentals-icon192x192_720.png 720w,https://developers.google.com/web/images/web-fundamentals-icon192x192_856.png 856w,https://developers.google.com/web/images/web-fundamentals-icon192x192_960.png 960w,https://developers.google.com/web/images/web-fundamentals-icon192x192_1440.png 1440w,https://developers.google.com/web/images/web-fundamentals-icon192x192_1920.png 1920w,https://developers.google.com/web/images/web-fundamentals-icon192x192_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/web"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <h1 class="devsite-product-name">Web</h1>        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                            <devsite-tabs class="upper-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  >
+            <a href="/web/fundamentals"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="fundamentals"
+           data-category="webFu"
+        data-label="upper-webfu"
+   >
+  Fundamentals
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/tools"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="tools"
+           data-category="webFu"
+        data-label="upper-tools"
+   >
+  Tools
+</a>
+
+          </tab>
+                                <tab  active>
+            <a href="/web/updates"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="updates"
+   aria-label="Updates, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Updates"
+   >
+  Updates
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/showcase"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="caseStudies"
+           data-category="webFu"
+        data-label="upper-showcase"
+   >
+  Case Studies
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Web"    tenant-name="Google Developers"    project-scope="/web"    url-scoped="https://developers.google.com/s/results/web"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                         ></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                        <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+                                                <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/web/updates"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Lower Header"
+              data-value="1"
+          >
+            Updates
+      
+  </a>
+        </li>
+  </ul>
+                                                              <div class="devsite-product-description">The latest and freshest updates from the Web teams at Google. Chrome, V8, tooling, and more.</div>
+  
+                          </div>
+                                                                            </div>
+                                      <div class="devsite-doc-set-nav-row">
+                                                      <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  active>
+            <a href="/web/updates"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+   aria-label="Featured, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Featured"
+   >
+  Featured
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/updates/capabilities"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: By Year"
+   >
+  By Year
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/updates/tags"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: By Tag"
+   >
+  By Tag
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                            </div>
+          </div>  </div></div>
+  
+
+  </devsite-header>      <devsite-book-nav scrollbars hidden>
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/web">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Web"
+         src="/web/images/web-fundamentals-icon192x192.png"
+         srcset="/web/images/web-fundamentals-icon192x192_36.png 36w, /web/images/web-fundamentals-icon192x192_48.png 48w, /web/images/web-fundamentals-icon192x192_72.png 72w, /web/images/web-fundamentals-icon192x192_96.png 96w, /web/images/web-fundamentals-icon192x192_480.png 480w, /web/images/web-fundamentals-icon192x192_720.png 720w, /web/images/web-fundamentals-icon192x192_856.png 856w, /web/images/web-fundamentals-icon192x192_960.png 960w, /web/images/web-fundamentals-icon192x192_1440.png 1440w, /web/images/web-fundamentals-icon192x192_1920.png 1920w, /web/images/web-fundamentals-icon192x192_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/web"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <h1 class="devsite-product-name">Web</h1>        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+                  <a href="/web/fundamentals"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Fundamentals"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="fundamentals">
+      <span class="devsite-nav-text" tooltip >
+      Fundamentals
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/tools"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Tools"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="tools">
+      <span class="devsite-nav-text" tooltip >
+      Tools
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/updates"
+           class="devsite-nav-title gc-analytics-event
+                            devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Updates"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="updates">
+      <span class="devsite-nav-text" tooltip >
+      Updates
+   </span>
+        </a>
+  
+                                            <ul class="devsite-nav-responsive-tabs">
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/web/updates"
+           class="devsite-nav-title gc-analytics-event
+                            devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Featured"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="featured">
+      <span class="devsite-nav-text" tooltip >
+      Featured
+   </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/web/updates/capabilities"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: By Year"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="byYear">
+      <span class="devsite-nav-text" tooltip menu="_book">
+      By Year
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          menu="_book">
+    </span>
+        </a>
+  </li>
+
+                                                                                                  <li class="devsite-nav-item">
+    <a href="/web/updates/tags"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: By Tag"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="byTag">
+      <span class="devsite-nav-text" tooltip >
+      By Tag
+   </span>
+        </a>
+  </li>
+
+                                  </ul>
+                          </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/showcase"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Case Studies"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="caseStudies">
+      <span class="devsite-nav-text" tooltip >
+      Case Studies
+   </span>
+        </a>
+  
+                                        </li>
+                    
+                  </ul>
+          </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+                        >
+          <devsite-toc class="devsite-nav"
+            disabled></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">          <div class="devsite-banner devsite-banner-announcement"
+           >
+        <div class="devsite-banner-message">
+          <div class="devsite-banner-message-text">
+            <style>
+  .devsite-banner-announcement {
+    background-color: #e8f0fe;
+    color: #424242;
+
+  }
+  .devsite-banner-announcement :link,
+  .devsite-banner-announcement :visited {
+    background: #e8f0fe;
+    color: #039BE5;
+  }
+  .devsite-banner-announcement span.material-icons {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+</style> Didn't make the <code>#ChromeDevSummit</code> this year? Catch all the content (and more!) in the <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIDA1uGhqy45bqlul0VcvKMr">Chrome Dev Summit 2019</a> playlist on our <a href="https://www.youtube.com/user/ChromeDevelopers/">Chrome Developers YouTube Channel</a>.
+
+          </div>
+        </div>
+      </div>
+        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/web"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Web
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/web/updates"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="4"
+          >
+            Updates
+      
+  </a>
+        </li>
+  </ul>
+          </div>
+
+        
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 disabled>
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+                <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-67 devsite-landing-row-no-image-background"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2020/02/notification-permission-data-in-crux">
+        <img alt=""
+       src="/web/updates/images/generic/notifications.png"
+       srcset="https://developers.google.com/web/updates/images/generic/notifications_36.png 36w,https://developers.google.com/web/updates/images/generic/notifications_48.png 48w,https://developers.google.com/web/updates/images/generic/notifications_72.png 72w,https://developers.google.com/web/updates/images/generic/notifications_96.png 96w,https://developers.google.com/web/updates/images/generic/notifications_480.png 480w,https://developers.google.com/web/updates/images/generic/notifications_720.png 720w,https://developers.google.com/web/updates/images/generic/notifications_856.png 856w,https://developers.google.com/web/updates/images/generic/notifications_960.png 960w,https://developers.google.com/web/updates/images/generic/notifications_1440.png 1440w,https://developers.google.com/web/updates/images/generic/notifications_1920.png 1920w,https://developers.google.com/web/updates/images/generic/notifications_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2020/02/notification-permission-data-in-crux">
+        <h3 id="adding-notification-permission-data-to-the-chrome-user-experience-report">
+      Adding notification permission data to the Chrome User Experience Report</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Chrome 80 introduced quieter permission UI for notifications. To help site owners understand notification permission metrics, we’re adding this data to the Chrome User Experience Report (CrUX) in the 202001 dataset allowing site owners gain a better understanding of typical user notification permission responses for their sites and comparable sites in their category.
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2020/02/notification-permission-data-in-crux"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-3-up"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2020/02/chromium-chronicle">
+        <img alt=""
+       src="/web/updates/images/generic/cr-chron.jpg"
+       srcset="https://developers.google.com/web/updates/images/generic/cr-chron_36.jpg 36w,https://developers.google.com/web/updates/images/generic/cr-chron_48.jpg 48w,https://developers.google.com/web/updates/images/generic/cr-chron_72.jpg 72w,https://developers.google.com/web/updates/images/generic/cr-chron_96.jpg 96w,https://developers.google.com/web/updates/images/generic/cr-chron_480.jpg 480w,https://developers.google.com/web/updates/images/generic/cr-chron_720.jpg 720w,https://developers.google.com/web/updates/images/generic/cr-chron_856.jpg 856w,https://developers.google.com/web/updates/images/generic/cr-chron_960.jpg 960w,https://developers.google.com/web/updates/images/generic/cr-chron_1440.jpg 1440w,https://developers.google.com/web/updates/images/generic/cr-chron_1920.jpg 1920w,https://developers.google.com/web/updates/images/generic/cr-chron_2880.jpg 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2020/02/chromium-chronicle">
+        <h3 id="the-chromium-chronicle-catching-ui-regressions-with-pixel-tests">
+      The Chromium Chronicle: Catching UI Regressions with Pixel Tests</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Chrome’s testing strategy relies heavily on automated functional correctness tests and manual testing, but neither of these reliably catch minor UI regressions. Use pixel tests to automate testing your desktop browser UI.
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2020/02/chromium-chronicle"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2020/02/nic80">
+        <img alt=""
+       src="/web/updates/images/2020/02/new-80.jpg"
+       srcset="https://developers.google.com/web/updates/images/2020/02/new-80_36.jpg 36w,https://developers.google.com/web/updates/images/2020/02/new-80_48.jpg 48w,https://developers.google.com/web/updates/images/2020/02/new-80_72.jpg 72w,https://developers.google.com/web/updates/images/2020/02/new-80_96.jpg 96w,https://developers.google.com/web/updates/images/2020/02/new-80_480.jpg 480w,https://developers.google.com/web/updates/images/2020/02/new-80_720.jpg 720w,https://developers.google.com/web/updates/images/2020/02/new-80_856.jpg 856w,https://developers.google.com/web/updates/images/2020/02/new-80_960.jpg 960w,https://developers.google.com/web/updates/images/2020/02/new-80_1440.jpg 1440w,https://developers.google.com/web/updates/images/2020/02/new-80_1920.jpg 1920w,https://developers.google.com/web/updates/images/2020/02/new-80_2880.jpg 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2020/02/nic80">
+        <h3 id="new-in-chrome-80">
+      New in Chrome 80</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Chrome 80 is rolling out now, and there’s a ton of new stuff in it for developers! There’s support for modules in workers, optional chaining in JavaScript, new origin trials, features that have graduated from origin trial, and so much more. Let’s dive in and see what’s new for developers in Chrome 80!
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2020/02/nic80"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2020/01/devtools">
+        <img alt=""
+       src="/web/updates/images/generic/chrome-devtools.png"
+       srcset="https://developers.google.com/web/updates/images/generic/chrome-devtools_36.png 36w,https://developers.google.com/web/updates/images/generic/chrome-devtools_48.png 48w,https://developers.google.com/web/updates/images/generic/chrome-devtools_72.png 72w,https://developers.google.com/web/updates/images/generic/chrome-devtools_96.png 96w,https://developers.google.com/web/updates/images/generic/chrome-devtools_480.png 480w,https://developers.google.com/web/updates/images/generic/chrome-devtools_720.png 720w,https://developers.google.com/web/updates/images/generic/chrome-devtools_856.png 856w,https://developers.google.com/web/updates/images/generic/chrome-devtools_960.png 960w,https://developers.google.com/web/updates/images/generic/chrome-devtools_1440.png 1440w,https://developers.google.com/web/updates/images/generic/chrome-devtools_1920.png 1920w,https://developers.google.com/web/updates/images/generic/chrome-devtools_2880.png 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2020/01/devtools">
+        <h3 id="whatx27s-new-in-devtools-chrome-81">
+      What&#x27;s New In DevTools (Chrome 81)</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Moto G4 in Device Mode, new cookie-related features, and more.
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2020/01/devtools"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+      <hr>
+  
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-3-up"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2020/01/twa-multi-origin">
+        <img alt=""
+       src="/web/updates/images/generic/devices.png"
+       srcset="https://developers.google.com/web/updates/images/generic/devices_36.png 36w,https://developers.google.com/web/updates/images/generic/devices_48.png 48w,https://developers.google.com/web/updates/images/generic/devices_72.png 72w,https://developers.google.com/web/updates/images/generic/devices_96.png 96w,https://developers.google.com/web/updates/images/generic/devices_480.png 480w,https://developers.google.com/web/updates/images/generic/devices_720.png 720w,https://developers.google.com/web/updates/images/generic/devices_856.png 856w,https://developers.google.com/web/updates/images/generic/devices_960.png 960w,https://developers.google.com/web/updates/images/generic/devices_1440.png 1440w,https://developers.google.com/web/updates/images/generic/devices_1920.png 1920w,https://developers.google.com/web/updates/images/generic/devices_2880.png 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2020/01/twa-multi-origin">
+        <h3 id="multi-origin-trusted-web-activities">
+      Multi-Origin Trusted Web Activities</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Explains how to create one application using Trusted Web Activities that supports opening multiple origins in full-screen.
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2020/01/twa-multi-origin"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2020/01/twa-android-browser-helper">
+        <img alt=""
+       src="/web/updates/images/generic/devices.png"
+       srcset="https://developers.google.com/web/updates/images/generic/devices_36.png 36w,https://developers.google.com/web/updates/images/generic/devices_48.png 48w,https://developers.google.com/web/updates/images/generic/devices_72.png 72w,https://developers.google.com/web/updates/images/generic/devices_96.png 96w,https://developers.google.com/web/updates/images/generic/devices_480.png 480w,https://developers.google.com/web/updates/images/generic/devices_720.png 720w,https://developers.google.com/web/updates/images/generic/devices_856.png 856w,https://developers.google.com/web/updates/images/generic/devices_960.png 960w,https://developers.google.com/web/updates/images/generic/devices_1440.png 1440w,https://developers.google.com/web/updates/images/generic/devices_1920.png 1920w,https://developers.google.com/web/updates/images/generic/devices_2880.png 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2020/01/twa-android-browser-helper">
+        <h3 id="introducing-android-browser-helper-a-library-for-building-trusted-web-activities">
+      Introducing android-browser-helper, a library for building Trusted Web Activities</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Introduces android-browser-helper, a new library to build Trusted Web Activities.
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2020/01/twa-android-browser-helper"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2019/12/chrome-80-deps-rems">
+        <img alt=""
+       src="/web/updates/images/generic/deps-rems.jpg"
+       srcset="https://developers.google.com/web/updates/images/generic/deps-rems_36.jpg 36w,https://developers.google.com/web/updates/images/generic/deps-rems_48.jpg 48w,https://developers.google.com/web/updates/images/generic/deps-rems_72.jpg 72w,https://developers.google.com/web/updates/images/generic/deps-rems_96.jpg 96w,https://developers.google.com/web/updates/images/generic/deps-rems_480.jpg 480w,https://developers.google.com/web/updates/images/generic/deps-rems_720.jpg 720w,https://developers.google.com/web/updates/images/generic/deps-rems_856.jpg 856w,https://developers.google.com/web/updates/images/generic/deps-rems_960.jpg 960w,https://developers.google.com/web/updates/images/generic/deps-rems_1440.jpg 1440w,https://developers.google.com/web/updates/images/generic/deps-rems_1920.jpg 1920w,https://developers.google.com/web/updates/images/generic/deps-rems_2880.jpg 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2019/12/chrome-80-deps-rems">
+        <h3 id="deprecations-and-removals-in-chrome-80">
+      Deprecations and removals in Chrome 80</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            A round up of the deprecations and removals in Chrome 80 to help you plan.
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2019/12/chrome-80-deps-rems"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+      <hr>
+  
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-3-up"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2019/12/webvr-1-1-removed">
+        <img alt=""
+       src="/web/updates/images/generic/deps-rems.jpg"
+       srcset="https://developers.google.com/web/updates/images/generic/deps-rems_36.jpg 36w,https://developers.google.com/web/updates/images/generic/deps-rems_48.jpg 48w,https://developers.google.com/web/updates/images/generic/deps-rems_72.jpg 72w,https://developers.google.com/web/updates/images/generic/deps-rems_96.jpg 96w,https://developers.google.com/web/updates/images/generic/deps-rems_480.jpg 480w,https://developers.google.com/web/updates/images/generic/deps-rems_720.jpg 720w,https://developers.google.com/web/updates/images/generic/deps-rems_856.jpg 856w,https://developers.google.com/web/updates/images/generic/deps-rems_960.jpg 960w,https://developers.google.com/web/updates/images/generic/deps-rems_1440.jpg 1440w,https://developers.google.com/web/updates/images/generic/deps-rems_1920.jpg 1920w,https://developers.google.com/web/updates/images/generic/deps-rems_2880.jpg 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2019/12/webvr-1-1-removed">
+        <h3 id="webvr-11-removed-from-chrome">
+      WebVR 1.1 removed from Chrome</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            WebVR 1.1 has been removed from Chrome.
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2019/12/webvr-1-1-removed"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2019/12/chromium-chronicle-9">
+        <img alt=""
+       src="/web/updates/images/generic/cr-chron.jpg"
+       srcset="https://developers.google.com/web/updates/images/generic/cr-chron_36.jpg 36w,https://developers.google.com/web/updates/images/generic/cr-chron_48.jpg 48w,https://developers.google.com/web/updates/images/generic/cr-chron_72.jpg 72w,https://developers.google.com/web/updates/images/generic/cr-chron_96.jpg 96w,https://developers.google.com/web/updates/images/generic/cr-chron_480.jpg 480w,https://developers.google.com/web/updates/images/generic/cr-chron_720.jpg 720w,https://developers.google.com/web/updates/images/generic/cr-chron_856.jpg 856w,https://developers.google.com/web/updates/images/generic/cr-chron_960.jpg 960w,https://developers.google.com/web/updates/images/generic/cr-chron_1440.jpg 1440w,https://developers.google.com/web/updates/images/generic/cr-chron_1920.jpg 1920w,https://developers.google.com/web/updates/images/generic/cr-chron_2880.jpg 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2019/12/chromium-chronicle-9">
+        <h3 id="the-chromium-chronicle-clusterfuzz">
+      The Chromium Chronicle: ClusterFuzz</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            You may find you are asked to fix high-priority security bugs discovered by ClusterFuzz. What is it? Should you take those bugs seriously? How can you help?
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2019/12/chromium-chronicle-9"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+    <a href="/web/updates/2019/12/nic79">
+        <img alt=""
+       src="/web/updates/images/2019/12/new-79.jpg"
+       srcset="https://developers.google.com/web/updates/images/2019/12/new-79_36.jpg 36w,https://developers.google.com/web/updates/images/2019/12/new-79_48.jpg 48w,https://developers.google.com/web/updates/images/2019/12/new-79_72.jpg 72w,https://developers.google.com/web/updates/images/2019/12/new-79_96.jpg 96w,https://developers.google.com/web/updates/images/2019/12/new-79_480.jpg 480w,https://developers.google.com/web/updates/images/2019/12/new-79_720.jpg 720w,https://developers.google.com/web/updates/images/2019/12/new-79_856.jpg 856w,https://developers.google.com/web/updates/images/2019/12/new-79_960.jpg 960w,https://developers.google.com/web/updates/images/2019/12/new-79_1440.jpg 1440w,https://developers.google.com/web/updates/images/2019/12/new-79_1920.jpg 1920w,https://developers.google.com/web/updates/images/2019/12/new-79_2880.jpg 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </a>
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+              <a href="/web/updates/2019/12/nic79">
+        <h3 id="new-in-chrome-79">
+      New in Chrome 79</h3>
+    
+  </a>
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Chrome 79 is rolling out now! Installed Progressive Web Apps on Android get support for maskable icons. You can now create immersive experiences with the WebXR Device API. Origin trials start for the Wake Lock API, and the <code translate="no" dir="ltr">rendersubtree</code> attribute. And all of the videos from Chrome Dev Summit 2019 are now online. Let’s dive in and see what’s new for developers in Chrome 79!
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/updates/2019/12/nic79"
+      class="button button-primary
+      "
+            >Read more</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-100"
+           
+           >
+
+          <header class="devsite-landing-row-header">
+            <div class="devsite-landing-row-header-text">
+
+                    <h2 id="more-updates">
+      More Updates</h2>
+    
+    
+
+              </div>
+      
+          </header>
+    
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item devsite-landing-row-item-no-media"
+     
+     >
+
+  
+    
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <h4><a href="/web/updates/2019/12/devtools">What&#x27;s New In DevTools (Chrome 80)</a></h4> <p>Support for let and class redeclarations in the Console, improved WebAssembly debugging, and more. <a href="/web/updates/2019/12/devtools">Read more</a></p> <h4><a href="/web/updates/2019/12/webassembly">Improved WebAssembly debugging in Chrome DevTools</a></h4> <p>Step over code, set breakpoints, and resolve stack traces in your source languages from within DevTools. <a href="/web/updates/2019/12/webassembly">Read more</a></p> <h4><a href="/web/updates/2019/11/chromium-chronicle-8">The Chromium Chronicle: GWP-ASan: Detect bugs in the wild</a></h4> <p>GWP-ASan is a heap-only memory error detector designed to be used in the wild. It detects use-after-frees, buffer overflows/underflows, and double frees. Unlike ASan, it does not detect errors on the stack or in globals. <a href="/web/updates/2019/11/chromium-chronicle-8">Read more</a></p> <h4>Even more</h4> <p>See more from the <a href="/web/updates/2019/">archives</a> and stay up to date with the latest updates by <a href="https://developers.google.com/web/updates/rss.xml">subscribing</a> to our RSS feed.</p> <link rel="alternate" type="application/rss+xml" title="RSS" href="https://developers.google.com/web/updates/rss.xml"> <link rel="alternate" type="application/atom+xml" title="ATOM" href="https://developers.google.com/web/updates/atom.xml">
+
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+
+          </div>
+
+    
+    
+          </article>
+</article>
+
+
+  <devsite-google-survey type="gcs" site-id=ylj5ifxusvvmr4pp6ae5lwrctq></devsite-google-survey>
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="https://blog.chromium.org"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 1)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/chrome_chromium_64dp.png"
+             alt="Chromium Blog">
+                Chromium Blog
+      </a>
+      <div class="devsite-footer-promo-description">The latest news on the Chromium blog.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://github.com/googlechrome"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 2)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-github.svg"
+             alt="GitHub">
+                GitHub
+      </a>
+      <div class="devsite-footer-promo-description">Fork our code samples and other open-source projects.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://twitter.com/chromiumdev"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 3)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-twitter.svg"
+             alt="Twitter">
+                Twitter
+      </a>
+      <div class="devsite-footer-promo-description">Connect with @ChromiumDev on Twitter.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="/web/shows"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 4)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/youtube_64dp.png"
+             alt="Videos">
+                Videos
+      </a>
+      <div class="devsite-footer-promo-description">Check out our videos.</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Key Topics</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/billions"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Building for Billions
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developers.chrome.com/extensions/api_index"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Chrome Extension Docs
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/site-kit"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Site-Kit
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/feedback"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Developer Feedback Program
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/progressive-web-apps"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Progressive Web Apps
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Training and Partners</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/ilt"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Instructor Led Training
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/shows/udacity"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Web Courses at Udacity
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/agencies"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Agencies
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Contribute</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://github.com/google/WebFundamentals/issues"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            File an Issue
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://github.com/google/WebFundamentals"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            View Page Source
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/resources"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Resources
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/resources/translations"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Translating
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link">
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link">
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link">
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Web", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}, {"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Web", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-52746336-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
