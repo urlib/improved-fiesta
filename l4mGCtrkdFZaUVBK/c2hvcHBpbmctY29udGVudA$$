@@ -1,0 +1,1392 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#1e8e3e">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/shopping-content/v2/quickstart"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Get Started &nbsp;|&nbsp; Content API for Shopping &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Get Started &nbsp;|&nbsp; Content API for Shopping &nbsp;|&nbsp; Google Developers">
+  <meta name="description" content="An API that lets you programmatically manage your Shopping product items.
+">
+  <meta property="og:description" content="An API that lets you programmatically manage your Shopping product items.
+">
+
+
+  <meta property="og:url" content="https://developers.google.com/shopping-content/v2/quickstart">
+
+  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/opengraph/google-green.png">
+  <meta property="og:image:secure_url" content="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/opengraph/google-green.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+  
+
+  
+
+  
+
+
+    </head>
+  <body type="article"
+        theme="google-green"
+        class=""
+        
+        layout="docs"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+      
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/shopping-content/v2/quickstart"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Content API for Shopping        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Content API for Shopping"    tenant-name="Google Developers"    project-scope="/shopping-content/v2/quickstart"    url-scoped="https://developers.google.com/s/results/shopping-content/v2/quickstart"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                         ></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                                  <div class="devsite-doc-set-nav-row">
+                                                                            <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  active>
+            <a href="/shopping-content/v2/quickstart"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+   aria-label="Guides, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Guides"
+   >
+  Guides
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/shopping-content/v2/reference/v2.1"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Reference"
+   >
+  Reference
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/shopping-content/v2/libraries"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Samples and Libraries"
+   >
+  Samples and Libraries
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/shopping-content/forum"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Support"
+   >
+  Support
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+  <devsite-feedback
+  project-name="Content API for Shopping"
+  product-id="82128"
+  bucket="SCAPI"
+  context=""
+  version="devsite-webserver-20200131-r01-rc01.424380295239055015"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="header"
+        project-icon="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/touchicon-180.png"
+    >
+    <button>Send feedback</button>
+</devsite-feedback>
+
+                            </div>
+          </div>  </div></div>
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+      
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/shopping-content/v2/quickstart"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              Content API for Shopping        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+    <a href="/shopping-content/v2/quickstart"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guides"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="guides">
+      <span class="devsite-nav-text" tooltip >
+      Guides
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/shopping-content/v2/reference/v2.1"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reference"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reference">
+      <span class="devsite-nav-text" tooltip >
+      Reference
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/shopping-content/v2/libraries"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Samples and Libraries"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="samplesAndLibraries">
+      <span class="devsite-nav-text" tooltip >
+      Samples and Libraries
+   </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/shopping-content/forum"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Support"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="support">
+      <span class="devsite-nav-text" tooltip >
+      Support
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item"><a href="/shopping-content/v2/quickstart"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Get Started</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-new"><a href="/adwords/shopping"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Shopping Automation Guide</span><span class="devsite-nav-icon material-icons"
+          data-icon="new"
+          data-title="New!"
+          aria-hidden="true"></span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/making-requests"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Making Requests</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/authorizing"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Authorizing Requests</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/batch"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Sending Batch Requests</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/service-accounts"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Service Accounts</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/account-level-tax-shipping"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Account-level Tax and Shipping</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/severity-mapping"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>About API Issue Severity</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/best-practices"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Best Practices</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/testing"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Testing</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/performance"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Performance Tips</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/limits"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Published Limits</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/parameters"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Standard Query Parameters</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Local Inventory Ads</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/lia/get-started"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Get Started with Local Inventory Ads</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/lia/configure-targets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Configure Target Countries for LIA</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/lia/link-gmb"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Link Your Google My Business Account</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/how-tos/lia/verify-inventory"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Verify Your Inventory</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Flagging Linked Accounts</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/shopping-content/v2/flagging/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/flagging/request"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Requesting Links</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/flagging/list"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Listing Links</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/flagging/approve"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Approving Links</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/flagging/remove"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Removing Links</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Orders API</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/shopping-content/v2/orders-guide"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Get Started</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/about-orders"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>About Orders</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/building-orders"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Using the Orders API</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/order-invoices"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Order Invoices API</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/order-returns"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Order Returns API</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/shipping-orders"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Shipping Orders</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/using-pickup"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Using Pickup/Collection Points</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/orders-best-practices"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Best Practices</span></a></li><li class="devsite-nav-item"><a href="/shopping-content/v2/order-limits"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Limits &amp; Constraints</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/products"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Products API</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/accountstatuses"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Account Statuses API</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/inventory"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Inventory API (v2 only)</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/productstatuses"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Product Statuses API</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/return-settings"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Return Settings API</span></a></li>
+  <li class="devsite-nav-item"><a href="/shopping-content/v2/shippingsettings"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Shipping Settings API</span></a></li>
+          </ul>
+                      </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/ads"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Ads
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/shopping-content/v2/quickstart"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="4"
+          >
+            Content API for Shopping
+      
+  </a>
+        </li>
+  </ul>
+               <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+          </div>
+
+              <h1 class="devsite-page-title">Get Started</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+
+
+
+  
+
+
+
+  
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  
+
+
+  
+
+
+
+
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+  
+
+  
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+<p>The Content API for Shopping allows apps to interact directly with the <a href="//merchants.google.com">Merchant
+Center platform</a>, vastly increasing the efficiency of
+managing large or complex Merchant Center accounts. Some typical use cases
+include:</p>
+
+<ul>
+<li>Automated account management</li>
+<li>Product management on a per-product basis</li>
+<li>Datafeed scheduling</li>
+<li>Managing complex tax and shipping settings</li>
+</ul>
+
+<p>With the Content API for Shopping you can build software that manages accounts
+from the customer level down to the product level. The API can do almost
+everything the Merchant Center website does, but <em>programmatically</em>. To help you
+get started, we offer <a href="/shopping-content/v2/libraries">code samples</a> in Java,
+.NET, Python, PHP, Ruby, and Go.</p>
+
+<p>This guide will help you create your first application using the Content API.
+Before you can start coding, there are a few things you need to do.</p>
+
+<h2 id="set_up_your_merchant_center_account">Set up your Merchant Center Account</h2>
+
+<ol>
+<li><p>Create a <a href="//support.google.com/merchants/answer/188493">Merchant Center Account</a>.</p></li>
+<li><p><a href="//support.google.com/merchants/answer/176793">Verify and claim your website URL</a>.</p></li>
+<li><p>Configure your <a href="//support.google.com/merchants/answer/160162">Tax &amp; Shipping
+settings</a>.</p></li>
+<li><p>Be sure to remember which email you used to create this merchant center
+account, as you will need that later. In the screenshots, you&#39;ll see it
+represented as <code translate="no" dir="ltr">merchant_user@example.com</code>.</p></li>
+</ol>
+
+<h2 id="make_your_first_api_request_without_a_line_of_code">Make your first API request (without a line of code!)</h2>
+
+<ol>
+<li><p>Head over to the <a href="/shopping-content/v2/reference/v2/products/list#try-it">API
+Explorer</a> in our
+developer documentation for <code translate="no" dir="ltr">Products.list</code>.</p></li>
+<li><p>Ensure that the logged in Google account is listed in the <strong>Users</strong> setting,
+available from the overflow menu.</p>
+
+<p><img src="/shopping-content/images/quickstart/1_usersettings.png" class="screenshot"></p></li>
+<li><p>In the API Explorer, make sure the Authentication setting says <strong>Google OAuth
+2.0</strong>:</p>
+
+<p><img src="/shopping-content/images/quickstart/2_oauth2_toggle.png" class="screenshot"></p>
+<aside class="note"><strong>Note:</strong><span> Google APIs use OAuth 2.0 protocol for authentication and
+authorization. First, you need to obtain OAuth credentials from the Google
+API Console. Your client application then requests an access token from the
+Google Authorization Server, extracts a token from the response, and sends
+the token to the Google API that you want to access.</span></aside></li>
+<li><p>Click <strong>Accept</strong> to authorize a Google-created API Console
+Project to temporarily access your Merchant Center account on your behalf to
+make an API request. Note that this screen should come from google.com, and
+you should be signed in to your Merchant Center email address.</p>
+
+<p><img src="/shopping-content/images/quickstart/3_oauthconsent.png" class="screenshot"></p></li>
+<li><p>Enter your Merchant ID from your Merchant Center account into the
+<code translate="no" dir="ltr">merchantId</code> field of the form, and click <strong>Execute</strong>.</p>
+
+<p><img src="/shopping-content/images/quickstart/4_sandboxresponse.jpg" class="screenshot">&gt;</p></li>
+<li><p>You should see a successful response. Congratulations! You&#39;ve made your first
+Shopping API request.</p></li>
+<li><p>If you have no products in your Merchant Center yet, there won&#39;t be any in
+the list. But never fear, we&#39;ll add some soon. At this point, you can hop to
+other requests and take a look at what they do. Since this is a RESTful API,
+all requests work similarly. Good next steps include
+<a href="//shopping-content/v2/reference/v2/products/insert#try-ita"><code translate="no" dir="ltr">Products.insert</code></a>,
+<a href="//shopping-content/v2/reference/v2/inventory/set#try-ita"><code translate="no" dir="ltr">Inventory.set</code></a>,
+and
+<a href="//shopping-content/v2/reference/v2/accountstatuses/get#try-ita"><code translate="no" dir="ltr">Accountstatuses.get</code></a>.</p></li>
+</ol>
+
+<h2 id="retrieve_a_service_account_key_for_authentication">Retrieve a service account key for authentication</h2>
+
+<p>Merchant Center can automatically create a Google API Console project and
+associated <a href="/identity/protocols/OAuth2ServiceAccount">service account</a> key for
+you. Your application will authenticate with this key when using the Content API
+for Shopping.</p>
+
+<ol>
+<li><p>Select <strong>Content API</strong> from the three-dot menu in Merchant Center.</p>
+
+<p><img src="/shopping-content/images/quickstart/content_api_in_overflow.png"
+class="screenshot"></p></li>
+<li><p>Select the <strong>Authentication</strong> tab.</p></li>
+<li><p>Click the <strong>+</strong> button to create a new API key.</p>
+
+<p><img src="/shopping-content/images/quickstart/creating_new_api_key.png"
+class="screenshot"></p>
+<aside class="note"><strong>Note:</strong><span> If you have not previously agreed to the terms of service needed to use
+Google APIs, then you will be led through that process now.</span></aside></li>
+</ol>
+
+<p>Once the new API Console project has been created and a new service
+account created in that project, the service account ID will be added as a new
+user to your Merchant Center account. In addition, your browser will
+automatically download a JSON file that contains the service account key. If you
+lose this file, you cannot re-download it, but you can repeat the process above
+to create a new key.</p>
+<aside class="caution"><strong>Caution:</strong><span> The new user will only have <strong>Standard</strong> access by default, which means
+it will not be able to use methods that require other levels of access. For
+example, most methods in the <code translate="no" dir="ltr">Accounts</code> service require the user to have
+<strong>Admin</strong> access.  You can adjust the permissions for the new user in the
+<strong>Users</strong> settings panel.</span></aside>
+<blockquote>
+<p>If you already have an existing API Console project and want
+to use it instead, then here&#39;s what to do to set up Content API access for
+your existing project.</p>
+
+<ul>
+<li><p>If you will be accessing your own Merchant Center account, we recommend
+using <a href="/identity/protocols/OAuth2ServiceAccount">service accounts</a> to simplify
+the authentication flow. Please check out the <a href="/shopping-content/v2/how-tos/service-accounts">Service
+Accounts guide</a> for details on
+how to set up a new service account. Once your account has been created, the
+service account key that you have downloaded and stored is used to
+authenticate, and you can receive the API token that you need to make calls to
+the API.</p></li>
+<li><p>If you are interested in making calls on behalf of clients with their own
+Merchant Center accounts, then please see the <a href="/shopping-content/v2/how-tos/authorizing">Authorize Requests
+guide</a>. However, for trying out the
+Content API, we suggest you set up a <a href="/shopping-content/v2/how-tos/testing">testing
+account</a> and use that until you have
+finished development.</p></li>
+</ul>
+</blockquote>
+
+<h2 id="your_first_authorized_api_request_using_python">Your first authorized API request using Python</h2>
+
+<p>Now that you have a service account key, you can access your account using the
+available <a href="/shopping-content/v2/libraries">Samples code</a>. This guide will use
+the Python samples to demonstrate using the API.</p>
+
+<ol>
+<li><p>Download our <a href="//github.com/googleads/googleads-shopping-samples/tree/master/python">Python
+samples</a>
+from our GitHub page.</p></li>
+<li><p>From within the <code translate="no" dir="ltr">python</code> directory, use pip to install needed package
+dependencies. More detailed instructions are available in the accompanying
+<code translate="no" dir="ltr">README.md</code> files.
+<pre class="devsite-terminal" translate="no" dir="ltr">pip install -r requirements.txt</pre></p></li>
+<li><p>Run the <code translate="no" dir="ltr">shopping/content/products/list.py</code> file, similar to what we did in
+the API Sandbox earlier.
+<pre class="devsite-terminal" translate="no" dir="ltr">python -m shopping.content.products.list</pre></p></li>
+<li><p>If you haven&#39;t followed the configuration directions in the README
+accompanying the source files, you will get an error that no sample
+configuration could be found.  Follow the directions in the README to create
+the configuration directory and to populate it with the appropriate
+information.  The JSON file you downloaded while setting up your service
+account should be placed in that directory with the filename
+<code translate="no" dir="ltr">service-account.json</code>.</p></li>
+<li><p>Now that you have set up the samples configuration, run
+<code translate="no" dir="ltr">shopping/content/products/list.py</code> again.
+<pre class="devsite-terminal" translate="no" dir="ltr">python -m shopping.content.products.list</pre></p></li>
+<li><p>At this point, the Python script should finish executing, and print out
+either a list of products that it found, or a message that there were no
+products in your account. If you get an error such as &quot;User cannot access
+account 1234567890&quot;, it&#39;s most likely because you have not set up the service
+account user as an authorized user in Merchant Center. From the API&#39;s
+standpoint, the API Console project sent a request on behalf of
+a user who was not on the list of authorized Merchant Center administrators,
+so it would, of course, reject that request.</p></li>
+<li><p>You can experiment with running <code translate="no" dir="ltr">shopping/content/products/list.py</code> as many
+times as you want, since it is a read-only request. You can also explore the
+many other samples that we&#39;ve created for both Python and other languages.</p></li>
+</ol>
+
+<p>At this point, you&#39;ve got a well suited environment for developing with the
+Content API for Shopping. You can now move on to learning more about
+<a href="/shopping-content/v2/making-requests">Making Requests</a> and <a href="/shopping-content/v2/best-practices">Best
+Practices</a>.</p>
+
+          </div>
+
+    
+                   <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+                               <devsite-feedback
+  project-name="Content API for Shopping"
+  product-id="82128"
+  bucket="SCAPI"
+  context=""
+  version="devsite-webserver-20200131-r01-rc01.424380295239055015"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="header"
+        project-icon="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/touchicon-180.png"
+    >
+    <button>Send feedback</button>
+</devsite-feedback>
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  </devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="//ads-developers.googleblog.com/search/label/content_api"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 1)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/blogger_64dp.png"
+             alt="Blog">
+                Blog
+      </a>
+      <div class="devsite-footer-promo-description">The latest Google Ads API Developer Blogs</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Tools</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/shopping-content/v2/libraries"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Downloads
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developers.google.com/apis-explorer/#p/content/v2/"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            APIs Explorer
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Product Info</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/shopping-content/v2/terms"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Terms of Service
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Developer consoles</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.developers.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Google API Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.cloud.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Cloud Platform Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//play.google.com/apps/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Play Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.firebase.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Firebase Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.actions.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Actions on Google Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//cast.google.com/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Cast SDK Developer Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//chrome.google.com/webstore/developer/dashboard"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 7)"           >
+            Chrome Web Store Dashboard
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link">
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link">
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link">
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Content API for Shopping", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}, {"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Content API for Shopping", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-54828107-11"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
