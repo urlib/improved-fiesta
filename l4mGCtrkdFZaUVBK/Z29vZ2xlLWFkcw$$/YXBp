@@ -1,0 +1,1489 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#009688">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/google-ads/api/docs/start"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Product Overview &nbsp;|&nbsp; Google Ads API Beta &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Product Overview &nbsp;|&nbsp; Google Ads API Beta &nbsp;|&nbsp; Google Developers">
+  <meta name="description" content="Build tools to manage large Google Ads accounts and campaigns.
+">
+  <meta property="og:description" content="Build tools to manage large Google Ads accounts and campaigns.
+">
+
+
+  <meta property="og:url" content="https://developers.google.com/google-ads/api/docs/start">
+
+  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/opengraph/teal.png">
+  <meta property="og:image:secure_url" content="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/opengraph/teal.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+  
+
+  
+
+  
+
+
+    </head>
+  <body type="article"
+        theme="teal"
+        class=""
+        
+        layout="docs"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/google-ads/api/docs/start">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Google Ads API Beta"
+         src="/ads/images/ads_192px_clr.svg"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/google-ads/api/docs/start"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Ads API Beta        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Google Ads API Beta"    tenant-name="Google Developers"    project-scope="/google-ads/api/docs/start"    url-scoped="https://developers.google.com/s/results/google-ads/api/docs/start"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                         ></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                                  <div class="devsite-doc-set-nav-row">
+                                                                            <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  active>
+            <a href="/google-ads/api/docs/start"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+   aria-label="Guides, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Guides"
+   >
+  Guides
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/google-ads/api/docs/migration"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Migration"
+   >
+  Migration
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/google-ads/api/reference/rpc"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Reference"
+   >
+  Reference
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/google-ads/api/fields/v2/overview"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Reports"
+   >
+  Reports
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/google-ads/api/docs/client-libs"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Libraries &amp; Examples"
+   >
+  Libraries &amp; Examples
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/google-ads/api/support"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Support &amp; Policies"
+   >
+  Support &amp; Policies
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+  <devsite-feedback
+  project-name="Google Ads API Beta"
+  product-id="82128"
+  bucket="Simply"
+  context=""
+  version="devsite-webserver-20200131-r01-rc01.424380295239055015"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="header"
+      project-feedback-url="//services.google.com/fb/forms/google-ads-api-feedback/"
+              project-icon="https://developers.google.com/ads/images/ads_192px_clr.svg"
+            project-support-url="//groups.google.com/forum/#!forum/adwords-api"
+    project-support-icon="/_static/images/feedback/ic_help_24px.svg"
+  >
+    <button>Send feedback</button>
+</devsite-feedback>
+
+                            </div>
+          </div>  </div></div>
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/google-ads/api/docs/start">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Google Ads API Beta"
+         src="/ads/images/ads_192px_clr.svg"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/google-ads/api/docs/start"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>Ads API Beta        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+    <a href="/google-ads/api/docs/start"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Guides"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="guides">
+      <span class="devsite-nav-text" tooltip >
+      Guides
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/google-ads/api/docs/migration"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Migration"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="migration">
+      <span class="devsite-nav-text" tooltip >
+      Migration
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/google-ads/api/reference/rpc"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reference"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reference">
+      <span class="devsite-nav-text" tooltip >
+      Reference
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/google-ads/api/fields/v2/overview"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reports"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reports">
+      <span class="devsite-nav-text" tooltip >
+      Reports
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/google-ads/api/docs/client-libs"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Libraries &amp; Examples"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="libraries&amp;Examples">
+      <span class="devsite-nav-text" tooltip >
+      Libraries &amp; Examples
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/google-ads/api/support"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Support &amp; Policies"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="support&amp;Policies">
+      <span class="devsite-nav-text" tooltip >
+      Support &amp; Policies
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item"><a href="/google-ads/api/docs/start"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Product Overview</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Quickstart</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/first-call/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/first-call/dev-token"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Developer Token</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/first-call/get-client-lib"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Client Library</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/first-call/oauth-cloud-project"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>OAuth Cloud Project</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/first-call/oauth-client-library"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>OAuth Client Library</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/first-call/refresh-token"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Refresh Token</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/first-call/get-campaigns"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>First Call</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Concepts</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/concepts/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/concepts/api-structure"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>API Structure</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/concepts/changing-objects"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Changing and Inspecting Objects</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/concepts/retrieving-objects"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Retrieving Objects</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/concepts/field-service"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Resource Metadata</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/concepts/call-structure"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Call Structure</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/concepts/curl-example"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>API Call Example</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>OAuth</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/oauth/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/oauth/cloud-project"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Cloud Project</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/oauth/client-library"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Client Library</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/oauth/optimizing-requests"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Optimizing Requests</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/oauth/service-accounts"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Service Accounts</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/oauth/internals"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Internals</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/oauth/playground"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Playground</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Reporting</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/reporting/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/reporting/example"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Example</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/reporting/criteria-metrics"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Criteria Metrics</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/reporting/segmentation"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Segmentation</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/reporting/zero-impressions"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Zero Impressions</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Query Language</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/query/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/query/grammar"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Query Grammar</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/query/structure"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Query Structure</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/query/date-ranges"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Date Ranges</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/query/ordering-limiting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Ordering and Limiting Results</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/query/interactive-gaql-builder"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Interactive Query Builder</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Mutates</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/mutating/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/mutating/service-mutates"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Resource Mutates</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/mutating/bulk-mutate"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Bulk Mutates</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/mutating/best-practices"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Best Practices</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Campaigns</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/create-campaigns"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Campaigns</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/create-ad-groups"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Ad Groups</span></a></li><li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Budgets</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/budgets/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/budgets/create-budgets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Budget</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/budgets/share-budgets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Share Budget</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/budgets/assign-budgets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Assign Budget</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/budgets/remove-budgets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Remove Budget</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/budgets/track-performance"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Track Performance</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/campaigns/budgets/restrictions-errors"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Restrictions &amp; Errors</span></a></li></ul></devsite-expandable-nav></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Ads</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/ads/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/ads/ad-types"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Ad Types</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/ads/create-ads"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Ads</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/ads/customize-ads"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Customizing Text Ads</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Targeting</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/targeting/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/targeting/criteria"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Criteria</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/targeting/bid-modifiers"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Bid modifiers</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/targeting/location-targeting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Location Targeting</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Feeds</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/feeds/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/feeds/feed"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Feeds</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/feeds/feed-items"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Feed Items</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/feeds/feed-mapping"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Feed Mapping</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/feeds/associate-feeds"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Associate Feeds</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/feeds/matching-functions"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Matching Functions</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/feeds/targeting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Feed Item Targeting</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Dynamic Remarketing</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/dynamic-remarketing/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/dynamic-remarketing/prerequisites"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Prerequisites</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/dynamic-remarketing/feed-based"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Feed-Based Dynamic Remarketing</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/dynamic-remarketing/real-estate-example"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Real Estate Feed Example</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/dynamic-remarketing/flights-example"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Flights Feed Example</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/dynamic-remarketing/merchant-center-example"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Merchant Center-Based Dynamic Remarketing</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/dynamic-remarketing/reporting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reporting</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/dynamic-remarketing/further-info"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Further Information</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Billing</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/billing/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/billing/billing-setups"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Billing Setup</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/billing/account-budgets"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Account Budget</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/billing/invoice-service"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Invoice Service</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Account Management</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/account-management/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/account-management/create-account"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Creating an Account</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/account-management/linking-manager-accounts"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Linking to Manager Accounts</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/account-management/listing-accounts"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>List Accessible Accounts</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item"><a href="/google-ads/api/docs/conversions"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Conversions</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Experiments</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/experiments/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/experiments/campaign-drafts"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Campaign Drafts</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/experiments/campaign-experiments"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Campaign Experiments</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/experiments/reporting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reporting on Experiments</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/experiments/async-errors"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Async Errors</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item"><a href="/google-ads/api/docs/recommendations"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Recommendation Service</span></a></li>
+  <li class="devsite-nav-item"><a href="/google-ads/api/docs/change-status"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Change Status Service</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Shopping Ads</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/shopping-ads/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/shopping-ads/create-campaign"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Campaign</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/shopping-ads/create-ad-group"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Ad Group</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/shopping-ads/create-ad-group-ad"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Ad</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/shopping-ads/create-listing-groups"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Listing Groups</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/shopping-ads/reporting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reporting</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Keyword Planning</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/keyword-planning/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/keyword-planning/generate-keyword-ideas"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Generate Keyword Ideas</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/keyword-planning/generate-historical-metrics"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Generate Historical Metrics</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/keyword-planning/generate-forecast-metrics"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Generate Forecast Metrics</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Hotel Ads</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/hotel-ads/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/hotel-ads/create-campaign"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Campaign</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/hotel-ads/create-ad-group"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Ad Group</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/hotel-ads/create-ad-group-ad"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Ad</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/hotel-ads/create-listing-groups"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Listing Groups</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/hotel-ads/create-ad-group-bid-modifier"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Group Bid Modifier</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/hotel-ads/reporting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reporting</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>App Campaigns</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/app-campaigns/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/app-campaigns/create-campaign"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Campaign</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/app-campaigns/create-ad-group"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create Ad Group &amp; Ad</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/app-campaigns/reporting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reporting</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Batch Processing</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/batch-processing/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/batch-processing/flow"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Usage Flow</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/batch-processing/temporary-ids"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Using Temporary IDs</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/batch-processing/best-practices"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Best Practices &amp; Limitations</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Smart Display Campaigns</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/smart-display-campaigns/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/smart-display-campaigns/create-campaign"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create campaign</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/smart-display-campaigns/create-ad-group"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create ad group</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/smart-display-campaigns/create-ad"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Create ad</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/smart-display-campaigns/reporting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Reporting</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Reach Forecasting</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/reach-forecasting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/reach-forecasting/concepts"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Concepts</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/reach-forecasting/authentication"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Authenticate</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/reach-forecasting/media-plan"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Specify a Media Plan</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/reach-forecasting/generate-curve"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Generate a Curve</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Best Practices</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/best-practices/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/best-practices/monitoring"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Monitoring</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/best-practices/quotas"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>API Limits and Quotas</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/best-practices/rate-limits"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Rate Limits</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/best-practices/troubleshooting"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Troubleshooting</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/best-practices/error-types"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Error Types</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/best-practices/common-errors"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Common Errors</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/best-practices/partial-failures"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Handle Partial Failures</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-expandable"><devsite-expandable-nav collapsed>
+    <a class="devsite-nav-toggle" aria-hidden="true"></a><div class="devsite-nav-title devsite-nav-title-no-path" tabindex="0" role="button"><span class="devsite-nav-text" tooltip>Policy Exemption Request</span></div><ul class="devsite-nav-section"><li class="devsite-nav-item"><a href="/google-ads/api/docs/policy-exemption/overview"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Overview</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/policy-exemption/expanded-text-ads"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Expanded Text Ads and Responsive Search Ads</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/policy-exemption/keywords"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Keywords</span></a></li><li class="devsite-nav-item"><a href="/google-ads/api/docs/policy-exemption/other-ads"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Other Ad Types</span></a></li></ul></devsite-expandable-nav></li>
+  <li class="devsite-nav-item           devsite-nav-break"></li>
+  <li class="devsite-nav-item"><a href="/google-ads/api/docs/release-notes"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Release Notes</span></a></li>
+  <li class="devsite-nav-item"><a href="/google-ads/api/docs/migration-v1-v2"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Migrating from v1 to v2</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-external"><a href="//github.com/googleapis/googleapis/tree/master/google/ads/googleads"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Protocol Buffers</span><span class="devsite-nav-icon material-icons"
+          data-icon="external"
+          data-title="External"
+          aria-hidden="true"></span></a></li>
+          </ul>
+                      </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">          <div class="devsite-banner devsite-banner-announcement"
+           >
+        <div class="devsite-banner-message">
+          <div class="devsite-banner-message-text">
+            Google Ads API is returning to beta status. Please read our <a href="//ads-developers.googleblog.com/2019/07/google-ads-api-returning-to-beta.html">blog post</a> for more details.
+          </div>
+        </div>
+      </div>
+        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/google-ads/api/docs/start"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Google Ads API Beta
+      
+  </a>
+        </li>
+  </ul>
+               <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+          </div>
+
+              <h1 class="devsite-page-title">Product Overview</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<aside class="caution">
+<p>Your feedback about the performance of our products is very important to us.
+After launching the Google Ads API in March, we've heard feedback about slow
+response times compared to the <a href="/adwords/api/">AdWords API</a>.  After
+in-depth analysis, we've determined that the overall performance of the Google
+Ads API is not ready for production usage.</p>
+
+<p>We take performance very seriously, and this is our highest priority to address.
+In the meantime, we're reverting Google Ads API back to beta status, and
+recommend production systems to use <a href="/adwords/api/">AdWords API</a> for
+the best experience.</p>
+
+<p>If you're currently using the Google Ads API in production, please contact
+googleadsapi-support@google.com to discuss recommendations specific to your use
+cases.</p>
+</aside>
+<aside class="key-point"><strong>Key Point:</strong><span> If you have already been using the AdWords API, head to the <a href="/google-ads/api/docs/migration/">quickstart
+guide for existing users</a>.</span></aside>
+<p>The Google Ads API is the modern programmatic interface to
+<a href="//support.google.com/google-ads/">Google Ads</a> and the next generation of the
+AdWords API. It enables developers to interact directly with the Google Ads
+platform, vastly increasing the efficiency of managing large or complex Google
+Ads accounts and campaigns. Some typical use cases include:</p>
+
+<ul>
+<li>Automated account management</li>
+<li>Custom reporting</li>
+<li>Ad management based on inventory</li>
+<li>Bid management based on business data</li>
+</ul>
+
+<p>With the Google Ads API you can build software that manages accounts from the customer
+level down to the keyword level. The API can do what the Google Ads UI does, but
+<em>programmatically</em>.</p>
+
+<p>Types of companies that can benefit from the Google Ads API include:</p>
+
+<ul>
+<li>Ad agencies</li>
+<li>Search Engine Marketing (SEM) companies</li>
+<li>Big brands managing a large number of accounts, with needs beyond what&#39;s
+possible within the Google Ads UI.</li>
+</ul>
+
+<p>The Google Ads API exposes both standard JSON REST endpoints and a high-performance
+<a href="//grpc.io">gRPC</a> interface. We provide pre-built <a href="/google-ads/api/docs/client-libs">client
+libraries</a> to get you started in the following languages:</p>
+
+<ul>
+<li>Java</li>
+<li>C#</li>
+<li>PHP</li>
+<li>Python</li>
+<li>Ruby</li>
+</ul>
+
+<h2 id="getting_started">Getting started</h2>
+
+<ul>
+<li><p>Apply for a <a href="/google-ads/api/docs/first-call/dev-token">developer token</a> if you
+don&#39;t already have one.</p></li>
+<li><p>Try <a href="/google-ads/api/docs/first-call/overview">making an API call</a>.</p></li>
+<li><p>Read up on <a href="/google-ads/api/docs/concepts/overview">API concepts</a>.</p></li>
+<li><p>Check out <a href="/google-ads/api/docs/entity-relationships">Entity Relationships</a>.</p></li>
+<li><p>Browse the <a href="/google-ads/api/docs/migration">Migrating to Google Ads API guide</a>.</p></li>
+<li><p>Visit our <a href="/google-ads/api/support/">support forum</a> if you encounter
+problems.</p></li>
+</ul>
+
+          </div>
+
+    
+                   <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+                               <devsite-feedback
+  project-name="Google Ads API Beta"
+  product-id="82128"
+  bucket="Simply"
+  context=""
+  version="devsite-webserver-20200131-r01-rc01.424380295239055015"
+  data-label="Send Feedback Button"
+  track-type="feedback"
+  track-name="sendFeedbackLink"
+  track-metadata-position="header"
+      project-feedback-url="//services.google.com/fb/forms/google-ads-api-feedback/"
+              project-icon="https://developers.google.com/ads/images/ads_192px_clr.svg"
+            project-support-url="//groups.google.com/forum/#!forum/adwords-api"
+    project-support-icon="/_static/images/feedback/ic_help_24px.svg"
+  >
+    <button>Send feedback</button>
+</devsite-feedback>
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  </devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Connect</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//googledevelopers.blogspot.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Blog
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//www.facebook.com/Google-Developers-967415219957038"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Facebook
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//medium.com/google-developers"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Medium
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//twitter.com/googledevs"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Twitter
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//www.youtube.com/user/GoogleDevelopers"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            YouTube
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Programs</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//www.womentechmakers.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Women Techmakers
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gbg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Business Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gdg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Developer Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/experts"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Google Developers Experts
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/launchpad"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Launchpad
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/dsc"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Developer Student Clubs
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Developer consoles</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.developers.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Google API Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.cloud.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Cloud Platform Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//play.google.com/apps/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Play Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.firebase.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Firebase Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.actions.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Actions on Google Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//cast.google.com/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Cast SDK Developer Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//chrome.google.com/webstore/developer/dashboard"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 7)"           >
+            Chrome Web Store Dashboard
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link">
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link">
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link">
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Google Ads API Beta", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}, {"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Google Ads API Beta", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-54828107-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
