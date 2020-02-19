@@ -1,0 +1,1114 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#ff0000">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/youtube/v3/guides/ios_youtube_helper"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Embed YouTube Videos in iOS Applications with the YouTube Helper Library</title>
+
+<meta property="og:title" content="Embed YouTube Videos in iOS Applications with the YouTube Helper Library">
+
+
+  <meta property="og:url" content="https://developers.google.com/youtube/v3/guides/ios_youtube_helper">
+
+  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/opengraph/youtube-theme.png">
+  <meta property="og:image:secure_url" content="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/opengraph/youtube-theme.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+  
+    
+    
+    
+  
+
+    </head>
+  <body type="article"
+        theme="youtube-theme"
+        class=""
+        
+        layout="docs"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/youtube">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="YouTube"
+         src="/site-assets/logo-youtube.svg"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/youtube"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              YouTube        
+  </a>
+              </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/youtube/iframe_api_reference"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="2"
+          >
+            IFrame Player API
+      
+  </a>
+        </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="YouTube IFrame Player API"    tenant-name="Google Developers"    project-scope="/youtube/iframe_api_reference"    url-scoped="https://developers.google.com/s/results/youtube/iframe_api_reference"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                         ></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+    ">
+    <div class="devsite-header-background">
+                                  <div class="devsite-doc-set-nav-row">
+                                                      <devsite-tabs class="lower-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  active>
+            <a href="/youtube/iframe_api_reference"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+   aria-label="Reference, selected"         data-category="Site-Wide Custom Events"
+        data-label="Tab: Reference"
+   >
+  Reference
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/youtube/youtube_player_demo"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Samples"
+   >
+  Samples
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/youtube/players/support"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name=""
+           data-category="Site-Wide Custom Events"
+        data-label="Tab: Support"
+   >
+  Support
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                            </div>
+          </div>  </div></div>
+
+  </devsite-header>      <devsite-book-nav scrollbars >
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/youtube">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="YouTube"
+         src="/site-assets/logo-youtube.svg"
+         srcset=""
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/youtube"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              YouTube        
+  </a>
+              </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/youtube/iframe_api_reference"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="2"
+          >
+            IFrame Player API
+      
+  </a>
+        </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+    <a href="/youtube/iframe_api_reference"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              devsite-nav-active"
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Reference"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="reference">
+      <span class="devsite-nav-text" tooltip >
+      Reference
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/youtube/youtube_player_demo"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Samples"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="samples">
+      <span class="devsite-nav-text" tooltip >
+      Samples
+   </span>
+        </a>
+  </li>
+
+                      <li class="devsite-nav-item">
+    <a href="/youtube/players/support"
+           class="devsite-nav-title gc-analytics-event
+              devsite-nav-has-children              "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Support"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="support">
+      <span class="devsite-nav-text" tooltip >
+      Support
+   </span>
+        <span class="devsite-nav-icon material-icons" data-icon="forward"
+          >
+    </span>
+        </a>
+  </li>
+
+                    
+                  </ul>
+          </div>
+          <div class="devsite-mobile-nav-bottom">
+                            <ul class="devsite-nav-list" menu="_book">
+            <li class="devsite-nav-item"><a href="/youtube/iframe_api_reference"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>IFrame API</span></a></li>
+  <li class="devsite-nav-item"><a href="/youtube/player_parameters"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Player Parameters</span></a></li>
+  <li class="devsite-nav-item           devsite-nav-heading"><div class="devsite-nav-title devsite-nav-title-no-path"><span class="devsite-nav-text" tooltip>Mobile APIs</span></div></li>
+  <li class="devsite-nav-item           devsite-nav-external"><a href="/youtube/players/android_player_api"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>Android Player API</span><span class="devsite-nav-icon material-icons"
+          data-icon="external"
+          data-title="External"
+          aria-hidden="true"></span></a></li>
+  <li class="devsite-nav-item"><a href="/youtube/v3/guides/ios_youtube_helper"
+     class="devsite-nav-title"
+   ><span class="devsite-nav-text" tooltip>iOS Helper Library</span></a></li>
+          </ul>
+                      </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+            has-book-nav            has-toc>
+          <devsite-toc class="devsite-nav"
+            ></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/youtube"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            YouTube
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/youtube/iframe_api_reference"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="4"
+          >
+            IFrame Player API
+      
+  </a>
+        </li>
+  </ul>
+               <devsite-page-rating position="header" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+          </div>
+
+              <h1 class="devsite-page-title">Embed YouTube Videos in iOS Applications with the YouTube Helper Library</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 >
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+
+  
+
+    <p><em>Ikai Lan, <span class="notranslate">YouTube Developer Relations – April 2014</span></em></p>
+
+    <section id="overview">
+      <p>The <code translate="no" dir="ltr">youtube-ios-player-helper</code> is an open source library that helps you embed a YouTube iframe player into an iOS application. The library creates a <code translate="no" dir="ltr"><a href="https://developer.apple.com/library/ios/documentation/uikit/reference/UIWebView_Class/Reference/Reference.html">UIWebView</a></code> and a bridge between your application’s Objective-C code and the YouTube player’s JavaScript code, thereby allowing the iOS application to control the YouTube player. This article describes the steps to install the library and get started using it from your iOS application.</p>
+    </section>
+
+    <section id="installation">
+      <h2>Installation</h2>
+
+      <p>This article assumes you have created a new Single View Application iOS project targeting iOS 7, and that you have the following files in addition to the other files added when creating this project:</p>
+
+      <ul>
+        <li class="notranslate"><code translate="no" dir="ltr">Main.storyboard</code></li>
+        <li class="notranslate"><code translate="no" dir="ltr">ViewController.h</code></li>
+        <li class="notranslate"><code translate="no" dir="ltr">ViewController.m</code></li>
+      </ul>
+
+      <p>There are two ways to install the library. The library is available to install via <a class="notranslate" href="https://cocoapods.org/">CocoaPods</a>, which has seen adoption as the iOS developer community’s dependency management tool of choice. Alternatively, the library and source files are available via the <a href="https://github.com/youtube/youtube-ios-player-helper">project’s GitHub page</a> and can be copied into an existing project.</p>
+    </section>
+
+    <section id="installation_cocoapods">
+      <h3>Install the library via CocoaPods</h3>
+
+      <p>If your project is using <a class="notranslate" href="https://cocoapods.org/">CocoaPods</a> for dependency management, installing the library is just a matter of adding the following line to your Podfile:</p>
+
+      <pre class="code prettyprint notranslate" dir="ltr">pod "youtube-ios-player-helper", "~> 0.1.4"</pre>
+
+      <p>At the command line prompt, type <code translate="no" dir="ltr">pod install</code> to update your workspace with the dependencies.</p>
+
+      <p>Tip: Remember that when using CocoaPods, you must open the <code translate="no" dir="ltr">.xcworkspace</code> file in Xcode, not the <code translate="no" dir="ltr">.xcodeproj</code> file.</p>
+
+      <p>To learn more about CocoaPods, check out <a href="https://guides.cocoapods.org/using/getting-started.html">their tutorial</a>.</p>
+    </section>
+
+    <section id="installation_manual">
+      <h3>Manually install the library</h3>
+
+      <p>The helper library is also easy to install manually. Either download the source via <a href="https://github.com/youtube/youtube-ios-player-helper">GitHub’s download link</a> or clone the repository. Once you have a local copy of the code, follow these steps:</p>
+
+      <ol>
+        <li><p>Open the sample project in Xcode or Finder.</p></li>
+
+        <li><p>Select <code translate="no" dir="ltr">YTPlayerView.h</code>, <code translate="no" dir="ltr">YTPlayerView.m</code>, and the <strong>Assets</strong> folder. If you are opening the workspace in Xcode, these will be available under <strong>Pods -> Development Pods -> YouTube-Player-iOS-Helper</strong> and <strong>Pods -> Development Pods -> YouTube-Player-iOS-Helper -> Resources</strong>. In the Finder, these are available in the project's root directory in the <strong>Classes</strong> and <strong>Assets</strong> directories.</p></li>
+
+        <li><p>Drag these files and folders into your project. Make sure the <strong>Copy items into destination group’s folder</strong> option is checked. When dragging the Assets folder, make sure that the <strong>Create Folder References for any added folders</strong> option is checked:</p>
+
+          <p><img src="/youtube/images/yt_ios_helper_01.png" class="screenshot" /></p>
+        </li>
+      </ol>
+      <p>The library should now be installed.</p>
+    </section>
+
+    <section id="adding_ytplayerview">
+      <h2>Add a <code translate="no" dir="ltr">YTPlayerView</code> via Interface Builder or the Storyboard</h2>
+
+      <p>To add a <code translate="no" dir="ltr">YTPlayerView</code> via Interface Builder or the Storyboard:
+
+      <ol>
+        <li>
+          <p>Drag a <code translate="no" dir="ltr">UIView</code> instance onto your View.</p>
+          <p><img src="/youtube/images/yt_ios_helper_02.png" class="screenshot"/></p>
+        </li>
+        <li>
+          <p>Select the Identity Inspector and change the class of the view to <code translate="no" dir="ltr">YTPlayerView</code>.</p>
+          <p><img src="/youtube/images/yt_ios_helper_03.png" /></p>
+        </li>
+        <li>
+          <p>Open <code translate="no" dir="ltr">ViewController.h</code> and add the following header:</p>
+          <pre class="code prettyprint lang-objc notranslate" dir="ltr">#import “YTPlayerView.h”</pre>
+
+          <p>Also add the following property:</p>
+
+          <pre class="code prettyprint lang-objc notranslate" dir="ltr">@property(nonatomic, strong) IBOutlet YTPlayerView *playerView;</pre>
+        </li>
+        <li>
+          <p>In Interface Builder, create a connection from the View element that you defined in the previous step to your View Controller's <code translate="no" dir="ltr">playerView</code> property.</p>
+
+          <img src="/youtube/images/yt_ios_helper_04.png"/>
+          <img src="/youtube/images/yt_ios_helper_05.png"/>
+        </li>
+        <li>
+          <p>Now open <code translate="no" dir="ltr">ViewController.m</code> and add the following code to the end of your <code translate="no" dir="ltr">viewDidLoad</code> method:</p>
+
+          <pre class="code prettyprint lang-objc notranslate" dir="ltr">[self.playerView loadWithVideoId:@"M7lc1UVf-VE"];</pre>
+        </li>
+      </ol>
+
+      <p>Build and run your application. When the video thumbnail loads, tap the video thumbnail to launch the fullscreen video player.</p>
+    </section>
+
+    <section id="controlling_playback">
+      <h2>Control video playback</h2>
+
+      <p>The <code translate="no" dir="ltr">ViewController::loadWithVideoId:</code> method has a variant, <code translate="no" dir="ltr">loadWithVideoId:playerVars:</code>, that allows developers to pass additional player variables to the view. These player variables correspond to the <a href="https://developers.google.com/youtube/player_parameters">player parameters in the JavaScript Player API</a>. The <code translate="no" dir="ltr">playsinline</code> parameter enables the video to play directly in the view rather than playing fullscreen. When a video is playing inline, the containing iOS application can programmatically control playback.</p>
+
+      <p>Replace the <code translate="no" dir="ltr">loadWithVideoId:</code> call with this code:</p>
+
+      <pre class="code prettyprint lang-objc notranslate" dir="ltr">NSDictionary *playerVars = @{
+  @"playsinline" : @1,
+};
+[self.playerView loadWithVideoId:@"M7lc1UVf-VE" playerVars:playerVars];</pre>
+
+      <p>Open up the storyboard or Interface Builder. Drag two buttons onto your View, labeling them <strong>Play</strong> and <strong>Stop</strong>. Open <code translate="no" dir="ltr">ViewController.h</code> and add these methods, which will be mapped to the buttons</p>
+
+      <pre class="code prettyprint lang-objc notranslate" dir="ltr">
+- (IBAction)playVideo:(id)sender;
+- (IBAction)stopVideo:(id)sender;</pre>
+
+      <p>Now open <code translate="no" dir="ltr">ViewController.m</code> and define these two functions:</p>
+
+      <pre class="code prettyprint lang-objc notranslate" dir="ltr">
+- (IBAction)playVideo:(id)sender {
+  [self.playerView playVideo];
+}
+
+- (IBAction)stopVideo:(id)sender {
+  [self.playerView stopVideo];
+}</pre>
+
+      <p>Most of the JavaScript Player API functions have Objective-C equivalents, though some of the naming may differ slightly to more closely match Objective-C coding guidelines. Notable exceptions are methods controlling the volume of the video, since these are controlled by the phone hardware or with built in <code translate="no" dir="ltr">UIView</code> instances designed for this purpose, such as <a class="notranslate" href="https://developer.apple.com/library/ios/documentation/mediaplayer/reference/MPVolumeView_Class/Reference/Reference.html"><code translate="no" dir="ltr">MPVolumeView</code></a>.</p>
+
+      <p>Open your storyboard or Interface Builder and control-drag to connect the <strong>Play</strong> and <strong>Stop</strong> buttons to the <code translate="no" dir="ltr">playVideo:</code> and <code translate="no" dir="ltr">stopVideo:</code> methods.</p>
+
+      <p><img src="/youtube/images/yt_ios_helper_06.png"/></p>
+
+      <p>Now build and run the application. Once the video thumbnail loads, you should be able to play and stop the video using native controls in addition to the player controls.</p>
+    </section>
+
+    <section id="handling_callbacks">
+      <h2>Handle player callbacks</h2>
+
+      <p>It can be useful to programmatically handle playback events, such as playback state changes and playback errors. In the JavaScript API, this is done with <a href="https://developers.google.com/youtube/js_api_reference#Adding_event_listener">event listeners</a>. In Objective-C,this is done with a <a href="https://developer.apple.com/library/ios/documentation/general/conceptual/CocoaEncyclopedia/DelegatesandDataSources/DelegatesandDataSources.html">delegate</a>.<p>
+
+      <p>The following code shows how to update the interface declaration in <code translate="no" dir="ltr">ViewController.h</code> so the class conforms to the delegate protocol. Change <code translate="no" dir="ltr">ViewController.h</code>’s interface declaration as follows:</p>
+
+      <pre class="code prettyprint lang-objc notranslate" dir="ltr">@interface ViewController : UIViewController&lt;YTPlayerViewDelegate&gt;</pre>
+
+      <p><code translate="no" dir="ltr">YTPlayerViewDelegate</code> is a protocol for handling playback events in the player. To update <code translate="no" dir="ltr">ViewController.m</code> to handle some of the events, you first need to set the  <code translate="no" dir="ltr">ViewController</code> instance as the delegate of the <code translate="no" dir="ltr">YTPlayerView</code> instance. To make this change, add the following line to the <code translate="no" dir="ltr">viewDidLoad</code> method in <code translate="no" dir="ltr">ViewController.h</code>.</p>
+
+      <pre class="code prettyprint lang-objc notranslate" dir="ltr">self.playerView.delegate = self;</pre>
+
+      <p>Now add the following method to <code translate="no" dir="ltr">ViewController.m</code>:</p>
+
+      <pre class="code prettyprint lang-objc notranslate" dir="ltr">
+- (void)playerView:(YTPlayerView *)playerView didChangeToState:(YTPlayerState)state {
+  switch (state) {
+    case kYTPlayerStatePlaying:
+      NSLog(@"Started playback");
+      break;
+    case kYTPlayerStatePaused:
+      NSLog(@"Paused playback");
+      break;
+    default:
+      break;
+  }
+}</pre>
+
+      <p>Build and run the application. Watch the log output in Xcode as the player state changes. You should see updates when the video is played or stopped.</p>
+
+      <p>The library provides the constants that begin with the <code translate="no" dir="ltr">kYT*</code> prefix for convenience and readability. For a full list of these constants, look at <code translate="no" dir="ltr">YTPlayerView.m</code>. Other useful methods include:</p>
+
+      <pre class="code prettyprint lang-objc notranslate" dir="ltr">
+- (void)playerViewDidBecomeReady:(YTPlayerView *)playerView;
+- (void)playerView:(YTPlayerView *)playerView didChangeToState:(YTPlayerState)state;
+- (void)playerView:(YTPlayerView *)playerView didChangeToQuality:(YTPlaybackQuality)quality;
+- (void)playerView:(YTPlayerView *)playerView receivedError:(YTPlayerError)error;</pre>
+    </section>
+
+    <section id="best_practices">
+      <h2>Best practices and limitations</h2>
+
+      <p>The library builds on top of the iframe player API by creating a UIWebView and rendering the HTML and JavaScript required for a basic player. The library's goal is to be as easy-to-use as possible, bundling methods that developers frequently have to write into a package. There are a few limitations that should be noted:</p>
+
+      <ul>
+        <li>The library does not support concurrent video playback in multiple <code translate="no" dir="ltr">YTPlayerView</code> instances. If your application has multiple <code translate="no" dir="ltr">YTPlayerView</code> instances, a recommended best practice is to pause or stop playback in any existing instances before starting playback in a different instance. In the example application that ships with the project, the ViewControllers make use of <code translate="no" dir="ltr">NSNotificationCenter</code> to dispatch notifications that playback is about to begin. Other ViewControllers are notified and will pause playback in their <code translate="no" dir="ltr">YTPlayerView</code> instances.</li>
+
+        <li>Reuse your existing, loaded <code translate="no" dir="ltr">YTPlayerView</code> instances when possible. When a video needs to be changed in a View, don't create a new <code translate="no" dir="ltr">UIView</code> instance or a new <code translate="no" dir="ltr">YTPlayerView</code> instance, and don't call either <code translate="no" dir="ltr">loadVideoId:</code> or <code translate="no" dir="ltr">loadPlaylistId:</code>. Instead, use the the <code translate="no" dir="ltr">cueVideoById:startSeconds:suggestedQuality:</code> family of functions, which do not reload the <code translate="no" dir="ltr">UIWebView</code>. There is a noticeable delay when loading the entire iframe player.</li>
+
+        <li>This player cannot play private videos, but it can play <a href="https://support.google.com/youtube/answer/157177">unlisted videos</a>. Since this library wraps the existing iframe player, the player's behavior should be nearly identical to that of a player embedded on a webpage in a mobile browser.</li>
+      </ul>
+    </section>
+
+    <section id="open_source">
+      <h2>Open source</h2>
+
+      <p>The library's best feature is that it is open source. Prefer a different way of doing something? Fork the code! If you have any questions about this code or anything related to the API, ask away using the <a href="https://stackoverflow.com/questions/tagged/youtube-api">youtube-api tag on StackOverflow.</a></p>
+    </section>
+  
+          </div>
+
+    
+                   <devsite-page-rating position="footer" selected-rating="0" hover-rating-star="0">
+         </devsite-page-rating>
+                   
+          </article>
+</article>
+
+<devsite-content-footer class="nocontent">
+  <p>Except as otherwise noted, the content of this page is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 License</a>, and code samples are licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache 2.0 License</a>. For details, see the <a href="https://developers.google.com/site-policies">Google Developers Site Policies</a>. Java is a registered trademark of Oracle and/or its affiliates.</p>  </devsite-content-footer>
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="http://apiblog.youtube.com"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 1)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/blogger_64dp.png"
+             alt="Blog">
+                Blog
+      </a>
+      <div class="devsite-footer-promo-description">The latest news on the YouTube API blog</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://github.com/youtube/api-samples"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 2)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-github.svg"
+             alt="GitHub">
+                GitHub
+      </a>
+      <div class="devsite-footer-promo-description">Find API code samples and other YouTube open-source projects.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 3)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="/site-assets/developers_64dp.png"
+             alt="Issue Tracker">
+                Issue Tracker
+      </a>
+      <div class="devsite-footer-promo-description">Something wrong? Send us a bug report!</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="http://stackoverflow.com/questions/ask?tags=youtube-api"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 4)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-stack-overflow.svg"
+             alt="Stack Overflow">
+                Stack Overflow
+      </a>
+      <div class="devsite-footer-promo-description">Ask a question under the youtube-api tag</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://www.youtube.com/user/YouTubeDev"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 5)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/youtube_64dp.png"
+             alt="Videos">
+                Videos
+      </a>
+      <div class="devsite-footer-promo-description">Check out the YouTube Developer Relations team&#39;s YouTube channel</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Tools</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developers.google.com/apis-explorer/#p/"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Google APIs Explorer
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/youtube/youtube_player_demo"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            YouTube Player Demo
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/youtube/youtube_subscribe_button"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Configure a Subscribe Button
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Issue Tracker</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            File a bug
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://issuetracker.google.com/issues/new?component=186600&amp;template=874803"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Request a feature
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://issuetracker.google.com/issues?q=componentid:186600"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            See open issues
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Product Info</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/youtube/terms"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Terms of Service
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/youtube/branding_guidelines"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Branding Guidelines
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/youtube/creating_monetizable_applications"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Monetization Guidelines
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/youtube/youtube-api-list"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            APIs subject to Deprecation Policy
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link">
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link">
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link">
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "YouTube IFrame Player API", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers","https://developers-dot-devsite-v2-prod.appspot.com",null,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
