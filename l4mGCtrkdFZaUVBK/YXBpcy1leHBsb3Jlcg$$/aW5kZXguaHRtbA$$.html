@@ -1,0 +1,1643 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#1a73e8">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/apis-explorer"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Google APIs Explorer &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Google APIs Explorer &nbsp;|&nbsp; Google Developers">
+  <meta name="description" content="The Google APIs Explorer is is a tool that helps you explore various Google APIs interactively.
+">
+  <meta property="og:description" content="The Google APIs Explorer is is a tool that helps you explore various Google APIs interactively.
+">
+
+
+  <meta property="og:url" content="https://developers.google.com/apis-explorer">
+
+  <meta property="og:image" content="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/opengraph/google-blue.png">
+  <meta property="og:image:secure_url" content="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/opengraph/google-blue.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+  
+    
+    
+    
+  
+
+    </head>
+  <body type="article"
+        theme="google-blue"
+        class=""
+        
+        layout="full"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+      
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/apis-explorer"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>APIs Explorer        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Google APIs Explorer"    tenant-name="Google Developers"    project-scope="/apis-explorer"    url-scoped="https://developers.google.com/s/results/apis-explorer"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                         ></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+          devsite-header-no-lower-tabs
+    ">
+    <div class="devsite-header-background">
+                              </div>  </div></div>
+
+  </devsite-header>      <devsite-book-nav scrollbars hidden>
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+      
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             devsite-has-google-wordmark">
+                                  <a href="/apis-explorer"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <svg class="devsite-google-wordmark"
+       xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 148 48">
+    <title>Google</title>
+    <path class="devsite-google-wordmark-svg-path" d="M19.58,37.65c-9.87,0-18.17-8.04-18.17-17.91c0-9.87,8.3-17.91,18.17-17.91c5.46,0,9.35,2.14,12.27,4.94l-3.45,3.45c-2.1-1.97-4.93-3.49-8.82-3.49c-7.21,0-12.84,5.81-12.84,13.02c0,7.21,5.64,13.02,12.84,13.02c4.67,0,7.34-1.88,9.04-3.58c1.4-1.4,2.32-3.41,2.66-6.16H19.58v-4.89h16.47c0.18,0.87,0.26,1.92,0.26,3.06c0,3.67-1.01,8.21-4.24,11.44C28.93,35.9,24.91,37.65,19.58,37.65z M61.78,26.12c0,6.64-5.1,11.53-11.36,11.53s-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53S61.78,19.43,61.78,26.12z M56.8,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C53.84,33.11,56.8,30.22,56.8,26.12z M87.25,26.12c0,6.64-5.1,11.53-11.36,11.53c-6.26,0-11.36-4.89-11.36-11.53c0-6.68,5.1-11.53,11.36-11.53C82.15,14.59,87.25,19.43,87.25,26.12zM82.28,26.12c0-4.15-2.96-6.99-6.39-6.99c-3.43,0-6.39,2.84-6.39,6.99c0,4.11,2.96,6.99,6.39,6.99C79.32,33.11,82.28,30.22,82.28,26.12z M112.09,15.29v20.7c0,8.52-5.02,12.01-10.96,12.01c-5.59,0-8.95-3.76-10.22-6.81l4.41-1.83c0.79,1.88,2.71,4.1,5.81,4.1c3.8,0,6.16-2.36,6.16-6.77v-1.66h-0.18c-1.14,1.4-3.32,2.62-6.07,2.62c-5.76,0-11.05-5.02-11.05-11.49c0-6.51,5.28-11.57,11.05-11.57c2.75,0,4.93,1.22,6.07,2.58h0.18v-1.88H112.09z M107.64,26.16c0-4.06-2.71-7.03-6.16-7.03c-3.49,0-6.42,2.97-6.42,7.03c0,4.02,2.93,6.94,6.42,6.94C104.93,33.11,107.64,30.18,107.64,26.16z M120.97,3.06v33.89h-5.07V3.06H120.97z M140.89,29.92l3.93,2.62c-1.27,1.88-4.32,5.11-9.61,5.11c-6.55,0-11.28-5.07-11.28-11.53c0-6.86,4.77-11.53,10.71-11.53c5.98,0,8.91,4.76,9.87,7.34l0.52,1.31l-15.42,6.38c1.18,2.31,3.01,3.49,5.59,3.49C137.79,33.11,139.58,31.84,140.89,29.92zM128.79,25.77l10.31-4.28c-0.57-1.44-2.27-2.45-4.28-2.45C132.24,19.04,128.66,21.31,128.79,25.77z"/>
+  </svg>APIs Explorer        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                    
+                  </ul>
+          </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+                        >
+          <devsite-toc class="devsite-nav"
+            disabled></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner">        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/apis-explorer"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Google APIs Explorer
+      
+  </a>
+        </li>
+  </ul>
+          </div>
+
+              <h1 class="devsite-page-title">Google APIs Explorer</h1>
+    
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 disabled>
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+              
+    
+    <devsite-apix-index><!--
+      {
+  "abusiveexperiencereport:v1": {
+    "methodPath": "/{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/abusive-experience-report/{apiVersion}/reference/rest"
+  },
+  "acceleratedmobilepageurl:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/amp/cache/reference/acceleratedmobilepageurl/rest/"
+  },
+  "accessapproval:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/access-approval/docs/reference/rest/"
+  },
+  "accesscontextmanager:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/access-context-manager/docs/reference/rest/"
+  },
+  "accesscontextmanager:v1beta": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/access-context-manager/docs/reference/rest/"
+  },
+  "adexchangebuyer2:v2beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/authorized-buyers/apis/reference/rest/"
+  },
+  "adexchangebuyer:v1.2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/ad-exchange/buyer-rest/v1.2/"
+  },
+  "adexchangebuyer:v1.3": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/ad-exchange/buyer-rest/v1.3/"
+  },
+  "adexchangebuyer:v1.4": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/ad-exchange/buyer-rest/v1.4/"
+  },
+  "adexperiencereport:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/ad-experience-report/v1/reference/rest/"
+  },
+  "admin:datatransfer_v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/admin-sdk/data-transfer/v1/reference/"
+  },
+  "admin:directory_v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/admin-sdk/directory/v1/reference/"
+  },
+  "admin:reports_v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/admin-sdk/reports/v1/reference/"
+  },
+  "admob:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/admob/api/{apiVersion}/reference/rest/"
+  },
+  "adsense:v1.4": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/adsense/management/v1.4/reference/"
+  },
+  "adsensehost:v4.1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/adsense/host/v4.1/"
+  },
+  "alertcenter:v1beta1": {
+    "methodPath": "{apiVersion}/{1x?T*.1/}",
+    "referenceUrl": "https://developers.google.com/admin-sdk/alertcenter/reference/rest/"
+  },
+  "analytics:v3": {
+    "description": "View and manage accounts, properties, views, filters, uploads, permissions, etc.",
+    "methodPath": "{1x*/}",
+    "overrides": {
+      "analytics.data.ga.get": {
+        "description": "Query for dimensions and metrics to produce customized reports.",
+        "methodPath": "",
+        "referenceUrl": "https://developers.google.com/analytics/devguides/reporting/core/v3/reference",
+        "title": "Analytics Core Reporting API"
+      },
+      "analytics.data.mcf.get": {
+        "description": "Query the traffic source paths that lead to a user's goal conversion.",
+        "methodPath": "",
+        "referenceUrl": "https://developers.google.com/analytics/devguides/reporting/mcf/v3/reference",
+        "title": "Analytics Multi-Channel Funnels Reporting API"
+      },
+      "analytics.data.realtime.*": {
+        "description": "Report on activity occurring on your property right now.",
+        "methodPath": "{1x*/}",
+        "referenceUrl": "https://developers.google.com/analytics/devguides/reporting/realtime/v3/reference/",
+        "title": "Analytics Real Time Reporting API"
+      },
+      "analytics.metadata.*": {
+        "description": "Access the list of API dimensions and metrics and their attributes.",
+        "methodPath": "{1x*/}",
+        "referenceUrl": "https://developers.google.com/analytics/devguides/reporting/metadata/v3/reference/",
+        "title": "Analytics Metadata API"
+      },
+      "analytics.provisioning.*": {
+        "description": "Programmatically create Google Analytics accounts.",
+        "methodPath": "{1x*/}",
+        "referenceUrl": "https://developers.google.com/analytics/devguides/config/provisioning/v3/reference/",
+        "title": "Analytics Provisioning API"
+      },
+      "analytics.userDeletion.*": {
+        "description": "Delete all data in a Google Analytics property associated with a user identifier.",
+        "methodPath": "{1x*/}",
+        "referenceUrl": "https://developers.google.com/analytics/devguides/config/userdeletion/v3/reference/",
+        "title": "Analytics User Deletion API"
+      }
+    },
+    "referenceUrl": "https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/",
+    "title": "Analytics Management API"
+  },
+  "analyticsreporting:v4": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/analytics/devguides/reporting/core/v4/rest/"
+  },
+  "androiddeviceprovisioning:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "overrides": {
+      "androiddeviceprovisioning.customers.*": {
+        "methodPath": "{apiVersion}/{1x*.1/}",
+        "referenceUrl": "https://developers.google.com/zero-touch/reference/customer/rest/",
+        "title": "Android Device Provisioning Partner Customer API"
+      }
+    },
+    "referenceUrl": "https://developers.google.com/zero-touch/reference/reseller/rest/",
+    "title": "Android Device Provisioning Partner Reseller API"
+  },
+  "androidenterprise:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/android/work/play/emm-api/v1/"
+  },
+  "androidmanagement:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/android/management/reference/rest/"
+  },
+  "androidpublisher:v1.1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/android-publisher/archive/v1_1/"
+  },
+  "androidpublisher:v3": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/android-publisher/api-ref/"
+  },
+  "appengine:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/appengine/docs/admin-api/reference/rest/"
+  },
+  "appengine:v1beta": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/appengine/docs/admin-api/reference/rest/"
+  },
+  "appsactivity:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/google-apps/activity/v1/reference/"
+  },
+  "bigquery:v2": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "bigqueryreservation:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/bigquery/docs/reference/reservations/rest/"
+  },
+  "bigtableadmin:v2": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/bigtable/docs/reference/admin/rest/"
+  },
+  "billingbudgets:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/billing/docs/reference/budget/rest/"
+  },
+  "binaryauthorization:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/binary-authorization/docs/reference/rest/"
+  },
+  "binaryauthorization:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/binary-authorization/docs/reference/rest/"
+  },
+  "blogger:v2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/blogger/docs/2.0/json/reference/"
+  },
+  "blogger:v3": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/blogger/docs/3.0/reference/"
+  },
+  "books:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/books/docs/v1/reference/"
+  },
+  "calendar:v3": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/calendar/v3/reference/"
+  },
+  "chat:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/hangouts/chat/reference/rest/"
+  },
+  "civicinfo:v2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/civic-information/docs/v2/"
+  },
+  "classroom:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/classroom/reference/rest/"
+  },
+  "cloudasset:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/resource-manager/docs/cloud-asset-inventory/reference/rest/"
+  },
+  "cloudasset:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/resource-manager/docs/cloud-asset-inventory/reference/rest/"
+  },
+  "cloudbilling:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/billing/reference/rest/"
+  },
+  "cloudbuild:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/container-builder/docs/api/reference/rest/"
+  },
+  "clouddebugger:v2": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/debugger/api/reference/rest/"
+  },
+  "clouderrorreporting:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/error-reporting/reference/rest/"
+  },
+  "cloudfunctions:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/functions/docs/reference/rest/"
+  },
+  "cloudfunctions:v1beta2": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/functions/docs/reference/rest/"
+  },
+  "cloudidentity:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/identity/docs/reference/rest/"
+  },
+  "cloudiot:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/iot/docs/reference/cloudiot/rest/"
+  },
+  "cloudkms:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/kms/docs/reference/rest/"
+  },
+  "cloudprivatecatalog:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/private-catalog/docs/reference/rest/"
+  },
+  "cloudprivatecatalogproducer:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/private-catalog/docs/reference/producer/rest/"
+  },
+  "cloudresourcemanager:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/resource-manager/reference/rest/"
+  },
+  "cloudresourcemanager:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "overrides": {
+      "cloudresourcemanager.operations.get": {
+        "methodPath": "v1/{1x*/}"
+      }
+    },
+    "referenceUrl": "https://cloud.google.com/resource-manager/reference/rest/"
+  },
+  "cloudresourcemanager:v2": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "overrides": {
+      "cloudresourcemanager.operations.get": {
+        "methodPath": "v1/{1x*/}"
+      }
+    },
+    "referenceUrl": "https://cloud.google.com/resource-manager/reference/rest/"
+  },
+  "cloudresourcemanager:v2beta1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "overrides": {
+      "cloudresourcemanager.operations.get": {
+        "methodPath": "v1/{1x*/}"
+      }
+    },
+    "referenceUrl": "https://cloud.google.com/resource-manager/reference/rest/"
+  },
+  "cloudscheduler:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/scheduler/docs/reference/rest/"
+  },
+  "cloudscheduler:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/scheduler/docs/reference/rest/"
+  },
+  "cloudsearch:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/cloud-search/docs/reference/rest/"
+  },
+  "cloudshell:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/shell/docs/reference/rest/"
+  },
+  "cloudtasks:v2beta3": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/tasks/docs/reference/rest/"
+  },
+  "cloudtrace:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/trace/docs/reference/v1/rest/"
+  },
+  "cloudtrace:v2": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/trace/docs/reference/{apiVersion}/rest/"
+  },
+  "composer:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "composer:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "compute:beta": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://cloud.google.com/compute/docs/reference/beta/"
+  },
+  "compute:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://cloud.google.com/compute/docs/reference/v1/"
+  },
+  "container:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/kubernetes-engine/docs/reference/rest/"
+  },
+  "container:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/kubernetes-engine/docs/reference/rest/"
+  },
+  "containeranalysis:v1alpha1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/container-registry/docs/reference/rest/"
+  },
+  "containeranalysis:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/container-registry/docs/reference/rest/"
+  },
+  "content:v2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/shopping-content/v2/reference/v2/"
+  },
+  "content:v2.1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/shopping-content/v2/reference/v2/"
+  },
+  "customsearch:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/custom-search/json-api/v1/reference/"
+  },
+  "datacatalog:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/data-catalog/docs/reference/rest/"
+  },
+  "dataflow:v1b3": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/dataflow/docs/reference/rest/"
+  },
+  "datafusion:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/data-fusion/docs/reference/rest/"
+  },
+  "dataproc:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/dataproc/reference/rest/"
+  },
+  "dataproc:v1beta2": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/dataproc/reference/rest/"
+  },
+  "datastore:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "overrides": {
+      "datastore.projects.(export|import|indexes.(get|list))": {
+        "methodPath": "{apiVersion}/{1x*.1/}",
+        "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/admin/rest/",
+        "title": "Cloud Datastore Admin API"
+      }
+    },
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/data/rest/"
+  },
+  "datastore:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/datastore/docs/reference/admin/rest/"
+  },
+  "datastore:v1beta3": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/data/rest/"
+  },
+  "deploymentmanager:v2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://cloud.google.com/deployment-manager/docs/reference/latest/"
+  },
+  "deploymentmanager:v2beta": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://cloud.google.com/deployment-manager/docs/reference/v2beta/"
+  },
+  "dfareporting:v3.3": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/doubleclick-advertisers/{apiVersion}/"
+  },
+  "dialogflow:v2": {
+    "basePathExtra": "v2-overview",
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/dialogflow-enterprise/docs/reference/rest/"
+  },
+  "dialogflow:v2beta1": {
+    "basePathExtra": "v2beta1-overview",
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/dialogflow-enterprise/docs/reference/rest/"
+  },
+  "digitalassetlinks:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/digital-asset-links/reference/rest/"
+  },
+  "discovery:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/discovery/v1/reference/"
+  },
+  "dlp:v2": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "dns:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://cloud.google.com/dns/api/v1/"
+  },
+  "dns:v1beta2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/api/{apiVersion}/"
+  },
+  "docs:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/docs/api/reference/rest/"
+  },
+  "domainsrdap:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/domains/rdap/reference/rest/"
+  },
+  "doubleclickbidmanager:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/bid-manager/v1/"
+  },
+  "doubleclickbidmanager:v1.1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/bid-manager/{apiVersion}/"
+  },
+  "doubleclicksearch:v2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/search-ads/v2/reference/"
+  },
+  "drive:v2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/drive/v2/reference/"
+  },
+  "drive:v3": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/drive/v3/reference/"
+  },
+  "driveactivity:v2": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/drive/activity/v2/reference/rest/"
+  },
+  "factchecktools:v1alpha1": {
+    "description": "The Google FactCheck ClaimReview Read/Write API",
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/fact-check/tools/api/reference/rest/"
+  },
+  "file:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/filestore/docs/reference/rest/"
+  },
+  "firebase:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://firebase.google.com/docs/projects/api/reference/rest/"
+  },
+  "firebasedynamiclinks:v1": {
+    "referenceUrl": "https://firebase.google.com/docs/dynamic-links/rest/"
+  },
+  "firebasehosting:v1beta1": {
+    "description": "The Firebase Hosting REST API enables programmatic and customizable deployments to your Firebase-hosted sites. Use this REST API to deploy new or updated hosting configurations and content files.",
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://firebase.google.com/docs/hosting/reference/rest/"
+  },
+  "firebaserules:v1": {
+    "referenceUrl": "https://firebase.google.com/docs/storage/security/"
+  },
+  "firestore:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "firestore:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "firestore:v1beta2": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/firestore/docs/reference/rest/"
+  },
+  "fitness:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/fit/rest/v1/reference/"
+  },
+  "games:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/games/services/web/api/"
+  },
+  "gamesManagement:v1management": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/games/services/management/api/"
+  },
+  "genomics:v1": {
+    "methodPath": "{*/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/reference/rest/"
+  },
+  "genomics:v1alpha2": {
+    "methodPath": "{*/}",
+    "referenceUrl": "https://cloud.google.com/genomics/reference/rest/"
+  },
+  "gmail:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/gmail/api/v1/reference/"
+  },
+  "groupsmigration:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/google-apps/groups-migration/v1/reference/"
+  },
+  "groupssettings:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/admin-sdk/groups-settings/v1/reference/"
+  },
+  "healthcare:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/healthcare/docs/reference/rest/"
+  },
+  "iam:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/reference/rest/"
+  },
+  "iamcredentials:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/iam/credentials/reference/rest/"
+  },
+  "iap:v1beta1": {
+    "methodPath": "{apiVersion}/{1x?T*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "identitytoolkit:v3": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/identity/toolkit/web/reference/"
+  },
+  "indexing:v3": {
+    "basePathExtra": "{apiVersion}/urlNotifications/",
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/search/apis/indexing-api/v3/reference/indexing/rest/"
+  },
+  "kgsearch:v1": {
+    "methodPath": "",
+    "referenceUrl": "https://developers.google.com/knowledge-graph/reference/rest/{apiVersion}/"
+  },
+  "language:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/natural-language/docs/reference/rest/"
+  },
+  "language:v1beta2": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/natural-language/docs/reference/rest/"
+  },
+  "licensing:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/google-apps/licensing/v1/reference/"
+  },
+  "lifesciences:v2beta": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/life-sciences/docs/reference/rest/"
+  },
+  "logging:v2": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/{apiVersion}/rest/"
+  },
+  "manufacturers:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/manufacturers/reference/rest/"
+  },
+  "mirror:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/glass/v1/reference/"
+  },
+  "ml:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/ml-engine/reference/rest/"
+  },
+  "monitoring:v3": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/monitoring/api/ref_v3/rest/"
+  },
+  "oslogin:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/compute/docs/oslogin/rest/"
+  },
+  "oslogin:v1alpha": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/compute/docs/oslogin/rest/"
+  },
+  "oslogin:v1beta": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/compute/docs/oslogin/rest/"
+  },
+  "pagespeedonline:v4": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/speed/docs/insights/{apiVersion}/reference/"
+  },
+  "pagespeedonline:v5": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/speed/docs/insights/v5/reference/"
+  },
+  "people:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/{apiName}/api/rest/"
+  },
+  "photoslibrary:v1": {
+    "description": "Manage photos, videos, and albums in Google Photos\n",
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/photos/library/reference/rest/",
+    "title": "Photos Library API"
+  },
+  "playcustomapp:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/android/work/play/custom-app-api/v1/"
+  },
+  "policytroubleshooter:v1": {
+    "description": "Troubleshoot access issues for Google Cloud resources.",
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/iam/docs/reference/policytroubleshooter/rest/"
+  },
+  "poly:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/{apiName}/reference/api/rest/"
+  },
+  "proximitybeacon:v1beta1": {
+    "methodPath": "{apiVersion}/{1x?T*.1/}",
+    "referenceUrl": "https://developers.google.com/beacons/proximity/reference/rest/"
+  },
+  "pubsub:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "recommender:v1beta1": {
+    "description": "Recommender API.",
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/recommender/docs/reference/rest/"
+  },
+  "redis:v1": {
+    "methodPath": "{apiVersion}/{1x?T*.1/}",
+    "referenceUrl": "https://cloud.google.com/memorystore/docs/redis/reference/rest/"
+  },
+  "redis:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/memorystore/docs/redis/reference/rest/"
+  },
+  "reseller:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/google-apps/reseller/v1/reference/"
+  },
+  "runtimeconfig:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/deployment-manager/runtime-configurator/reference/rest/"
+  },
+  "runtimeconfig:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/deployment-manager/runtime-configurator/reference/rest/"
+  },
+  "safebrowsing:v4": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/safe-browsing/v4/reference/rest/"
+  },
+  "sasportal:v1alpha1": {
+    "description": "The Spectrum Access System (SAS) Portal API provides an interface to manage CBRS resources that are controlled by Google's SAS.",
+    "methodPath": "{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/spectrum-access-system/reference/rest/"
+  },
+  "script:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/apps-script/api/reference/rest/"
+  },
+  "searchconsole:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/webmaster-tools/search-console-api/reference/rest/"
+  },
+  "secretmanager:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/secret-manager/docs/reference/rest/"
+  },
+  "serviceconsumermanagement:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/service-infrastructure/docs/service-consumer-management/reference/rest/"
+  },
+  "servicecontrol:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/service-infrastructure/docs/service-control/reference/rest/"
+  },
+  "servicemanagement:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/service-infrastructure/docs/service-management/reference/rest/"
+  },
+  "servicenetworking:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/service-infrastructure/docs/service-networking/reference/rest/"
+  },
+  "servicenetworking:v1beta": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/service-infrastructure/docs/service-networking/reference/rest/"
+  },
+  "serviceusage:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/service-usage/docs/reference/rest/"
+  },
+  "serviceusage:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/service-usage/docs/reference/rest/"
+  },
+  "sheets:v4": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/sheets/reference/rest/"
+  },
+  "siteVerification:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/site-verification/v1/"
+  },
+  "slides:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/slides/reference/rest/"
+  },
+  "sourcerepo:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/source-repositories/docs/reference/rest/"
+  },
+  "spanner:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "speech:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/speech-to-text/docs/reference/rest/"
+  },
+  "speech:v2beta1": {
+    "methodPath": "",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "sql:v1beta4": {
+    "methodPath": "",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/"
+  },
+  "storage:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://cloud.google.com/storage/docs/json_api/{apiVersion}/"
+  },
+  "storagetransfer:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/storage-transfer/docs/reference/rest/"
+  },
+  "streetviewpublish:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://developers.google.com/streetview/publish/reference/rest/"
+  },
+  "tagmanager:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/tag-manager/api/v1/reference/"
+  },
+  "tagmanager:v2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/tag-manager/api/{apiVersion}/reference/"
+  },
+  "tasks:v1": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/{apiName}/{apiVersion}/reference/"
+  },
+  "testing:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://firebase.google.com/docs/test-lab/reference/testing/rest/"
+  },
+  "texttospeech:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/text-to-speech/docs/reference/rest/"
+  },
+  "texttospeech:v1beta1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/text-to-speech/docs/reference/rest/"
+  },
+  "tpu:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/tpu/docs/reference/rest/"
+  },
+  "tpu:v1alpha1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/tpu/docs/reference/rest/"
+  },
+  "translate:v2": {
+    "basePathExtra": "rest",
+    "overrides": {
+      "language.detections.detect": {
+        "methodPath": "detect"
+      },
+      "language.languages.list": {
+        "methodPath": "languages"
+      },
+      "language.translations.translate": {
+        "methodPath": "translate"
+      }
+    },
+    "referenceUrl": "https://cloud.google.com/translate/docs/reference/"
+  },
+  "translate:v3": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/{apiName}/docs/reference/rest/"
+  },
+  "vault:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/vault/reference/rest/"
+  },
+  "videointelligence:v1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/video-intelligence/docs/reference/rest/"
+  },
+  "videointelligence:v1beta2": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/video-intelligence/docs/reference/rest/"
+  },
+  "videointelligence:v1p1beta1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/video-intelligence/docs/reference/rest/"
+  },
+  "videointelligence:v1p2beta1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/video-intelligence/docs/reference/rest/"
+  },
+  "vision:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/vision/docs/reference/rest/"
+  },
+  "vision:v1p2beta1": {
+    "methodPath": "{apiVersion}/{1x*/}",
+    "referenceUrl": "https://cloud.google.com/vision/docs/reference/rest/"
+  },
+  "webfonts:v1": {
+    "methodPath": "",
+    "referenceUrl": "https://developers.google.com/fonts/docs/developer_api/"
+  },
+  "webmasters:v3": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/webmaster-tools/v3/"
+  },
+  "websecurityscanner:v1alpha": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://cloud.google.com/security-scanner/docs/reference/rest/"
+  },
+  "youtube:v3": {
+    "methodPath": "{1x*/}",
+    "overrides": {
+      "youtube.(live*|sponsors|superChatEvents).*": {
+        "methodPath": "{1x*/}",
+        "referenceUrl": "https://developers.google.com/youtube/v3/live/docs/",
+        "title": "YouTube Live API"
+      }
+    },
+    "referenceUrl": "https://developers.google.com/youtube/v3/docs/"
+  },
+  "youtubeAnalytics:v2": {
+    "methodPath": "{1x*/}",
+    "referenceUrl": "https://developers.google.com/youtube/analytics/reference/"
+  },
+  "youtubereporting:v1": {
+    "methodPath": "{apiVersion}/{1x*.1/}",
+    "referenceUrl": "https://developers.google.com/youtube/reporting/v1/reference/rest/"
+  }
+}
+    --></devsite-apix-index>
+
+      
+          </div>
+
+    
+              
+          </article>
+</article>
+
+
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Connect</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//googledevelopers.blogspot.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Blog
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//www.facebook.com/Google-Developers-967415219957038"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Facebook
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//medium.com/google-developers"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Medium
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//twitter.com/googledevs"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Twitter
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//www.youtube.com/user/GoogleDevelopers"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            YouTube
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Programs</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//www.womentechmakers.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Women Techmakers
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gbg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Business Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/gdg"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Developer Groups
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/experts"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Google Developers Experts
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/launchpad"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Launchpad
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/community/dsc"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Developer Student Clubs
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Developer consoles</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.developers.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Google API Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.cloud.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Google Cloud Platform Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//play.google.com/apps/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Google Play Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.firebase.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Firebase Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//console.actions.google.com"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Actions on Google Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//cast.google.com/publish"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 6)"           >
+            Cast SDK Developer Console
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="//chrome.google.com/webstore/developer/dashboard"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 7)"           >
+            Chrome Web Store Dashboard
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link">
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link">
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link">
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Google APIs Explorer", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
