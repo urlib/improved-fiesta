@@ -1,0 +1,1411 @@
+<!doctype html>
+<html       lang="en"      dir="ltr">
+  <head>
+    <meta name="google-signin-client-id" content="721724668570-nbkv1cfusk7kk4eni4pjvepaus73b13t.apps.googleusercontent.com">
+    <meta name="google-signin-scope" content="profile email">
+    <meta property="og:site_name" content="Google Developers">
+    <meta property="og:type" content="website">
+    
+          <meta name="theme-color" content="#1a73e8">
+    
+    <meta charset="utf-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="/_pwa/developers/manifest.json"
+          crossorigin="use-credentials">
+    <link rel="preconnect" href="//www.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="//fonts.googleapis.com" crossorigin>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons">
+        <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/app.css">
+    <noscript>
+      <link rel="stylesheet" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/css/ce_bundle.css">
+    </noscript>
+    <link rel="shortcut icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png">
+    <link rel="apple-touch-icon" href="https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/touchicon-180.png"><link rel="canonical" href="https://developers.google.com/web/billions"><link rel="search" type="application/opensearchdescription+xml"
+            title="Google Developers" href="https://developers.google.com/s/opensearch.xml">      
+<title>Building for Billions &nbsp;|&nbsp; Web &nbsp;|&nbsp; Google Developers</title>
+
+<meta property="og:title" content="Building for Billions &nbsp;|&nbsp; Web &nbsp;|&nbsp; Google Developers">
+  <meta name="description" content="The next billion people coming online will be diverse in every respect: their location, cultural experience, computer expertise, connectivity access, and the kinds of devices they use.">
+  <meta property="og:description" content="The next billion people coming online will be diverse in every respect: their location, cultural experience, computer expertise, connectivity access, and the kinds of devices they use.">
+
+  
+  <meta property="og:url" content="https://developers.google.com/web/billions">
+
+  <meta property="og:image" content="/web/images/social-webfu-16x9.png">
+  <meta property="og:image:secure_url" content="/web/images/social-webfu-16x9.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:locale" content="en">
+  <meta name="twitter:card" content="summary_large_image">
+
+
+
+
+    </head>
+  <body type="landing"
+        theme="google-blue"
+        class=""
+        
+        layout="full"
+                        pending>
+    <devsite-progress type="indeterminate" id="app-progress"></devsite-progress>
+    <section class="devsite-wrapper"><devsite-header>
+      
+
+
+
+
+
+
+
+<div class="devsite-header--inner">
+  <div class="devsite-top-logo-row-wrapper-wrapper">
+    <div class="devsite-top-logo-row-wrapper">
+      <div class="devsite-top-logo-row">
+        <button type="button" id="devsite-hamburger-menu"
+          class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+          data-category="Site-Wide Custom Events"
+          data-label="Navigation menu button"
+          visually-hidden
+          aria-label="Open menu">
+        </button>
+        <div class="devsite-product-name-wrapper">
+          <a href="/web">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Web"
+         src="/web/images/web-fundamentals-icon192x192.png"
+         srcset="https://developers.google.com/web/images/web-fundamentals-icon192x192_36.png 36w,https://developers.google.com/web/images/web-fundamentals-icon192x192_48.png 48w,https://developers.google.com/web/images/web-fundamentals-icon192x192_72.png 72w,https://developers.google.com/web/images/web-fundamentals-icon192x192_96.png 96w,https://developers.google.com/web/images/web-fundamentals-icon192x192_480.png 480w,https://developers.google.com/web/images/web-fundamentals-icon192x192_720.png 720w,https://developers.google.com/web/images/web-fundamentals-icon192x192_856.png 856w,https://developers.google.com/web/images/web-fundamentals-icon192x192_960.png 960w,https://developers.google.com/web/images/web-fundamentals-icon192x192_1440.png 1440w,https://developers.google.com/web/images/web-fundamentals-icon192x192_1920.png 1920w,https://developers.google.com/web/images/web-fundamentals-icon192x192_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+  
+  <span class="devsite-product-name">
+    <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/web"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <h1 class="devsite-product-name">Web</h1>        
+  </a>
+              </li>
+  </ul>
+  </span>
+</div>
+        <div class="devsite-top-logo-row-middle">
+          <div class="devsite-header-upper-tabs">
+                            <devsite-tabs class="upper-tabs">
+    <div class="devsite-tabs-wrapper">
+                        <tab  >
+            <a href="/web/fundamentals"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="fundamentals"
+           data-category="webFu"
+        data-label="upper-webfu"
+   >
+  Fundamentals
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/tools"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="tools"
+           data-category="webFu"
+        data-label="upper-tools"
+   >
+  Tools
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/updates"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="updates"
+           data-category="webFu"
+        data-label="upper-updates"
+   >
+  Updates
+</a>
+
+          </tab>
+                                <tab  >
+            <a href="/web/showcase"
+   class="gc-analytics-event"
+   track-type="globalNav"
+   track-metadata-position="nav"
+   track-metadata-eventdetail="nav"
+   track-name="caseStudies"
+           data-category="webFu"
+        data-label="upper-showcase"
+   >
+  Case Studies
+</a>
+
+          </tab>
+                  </div>
+  </devsite-tabs>
+
+
+                       </div>
+          <devsite-search
+    enable-signin    enable-search    enable-suggestions
+      enable-query-completion        project-name="Web"    tenant-name="Google Developers"    project-scope="/web"    url-scoped="https://developers.google.com/s/results/web"        >
+  <form class="devsite-search-form" action="https://developers.google.com/s/results" method="GET">
+    <div class="devsite-search-container">
+      <div class="devsite-searchbox">
+                <input placeholder="Search"
+          type="text"
+          class="devsite-search-field devsite-search-query"
+          name="q"
+          value=""
+          autocomplete="off"
+                    aria-label="Search box">
+        <div class="devsite-search-image material-icons" aria-hidden="true"></div>
+      </div>
+      <button type="button"
+              search-open
+              class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+              aria-label="Open search box"></button>
+    </div>
+  </form>
+  <button type="button"
+          search-close
+          class="devsite-search-button devsite-header-icon-button button-flat material-icons"
+          aria-label="Close search box"></button>
+</devsite-search>
+
+        </div>
+
+        
+        <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="zh_tw"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_tw"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 繁體
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+
+        
+                                      <devsite-user                         ></devsite-user>
+                         </div>    </div>  </div>
+  <div class="devsite-collapsible-section
+          devsite-header-no-lower-tabs
+    ">
+    <div class="devsite-header-background">
+                        <div class="devsite-product-id-row"
+           >
+            <div class="devsite-product-description-row">
+                                                                            <div class="devsite-product-description">The next billion people coming online will be diverse in every respect: their location, cultural experience, computer expertise, connectivity access, and the kinds of devices they use.</div>
+  
+                          </div>
+                                                                            </div>
+                                  </div>  </div></div>
+
+  </devsite-header>      <devsite-book-nav scrollbars hidden>
+                  
+
+
+
+
+
+<nav class="devsite-book-nav devsite-nav nocontent">
+  <div class="devsite-mobile-header">
+    <button type="button"
+            id="devsite-close-nav"
+            class="devsite-header-icon-button button-flat material-icons gc-analytics-event"
+            data-category="Site-Wide Custom Events"
+            data-label="Close navigation"
+            aria-label="Close navigation">
+    </button>
+    <div class="devsite-product-name-wrapper">
+          <a href="/web">
+      <div class="devsite-product-logo-container"
+       
+       >
+      <img class="devsite-product-logo"
+         alt="Web"
+         src="/web/images/web-fundamentals-icon192x192.png"
+         srcset="/web/images/web-fundamentals-icon192x192_36.png 36w, /web/images/web-fundamentals-icon192x192_48.png 48w, /web/images/web-fundamentals-icon192x192_72.png 72w, /web/images/web-fundamentals-icon192x192_96.png 96w, /web/images/web-fundamentals-icon192x192_480.png 480w, /web/images/web-fundamentals-icon192x192_720.png 720w, /web/images/web-fundamentals-icon192x192_856.png 856w, /web/images/web-fundamentals-icon192x192_960.png 960w, /web/images/web-fundamentals-icon192x192_1440.png 1440w, /web/images/web-fundamentals-icon192x192_1920.png 1920w, /web/images/web-fundamentals-icon192x192_2880.png 2880w"
+         sizes="64px">
+    </div>
+  
+  </a>
+  
+          <span class="devsite-product-name">
+        <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                                  <a href="/web"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Upper Header"
+              data-value="1"
+          >
+              <h1 class="devsite-product-name">Web</h1>        
+  </a>
+              </li>
+  </ul>
+      </span>
+    
+</div>  </div>
+
+  <div class="devsite-book-nav-wrapper">
+    <div class="devsite-mobile-nav-top">
+              <ul class="devsite-nav-list">
+                      <li class="devsite-nav-item">
+                  <a href="/web/fundamentals"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Fundamentals"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="fundamentals">
+      <span class="devsite-nav-text" tooltip >
+      Fundamentals
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/tools"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Tools"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="tools">
+      <span class="devsite-nav-text" tooltip >
+      Tools
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/updates"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Updates"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="updates">
+      <span class="devsite-nav-text" tooltip >
+      Updates
+   </span>
+        </a>
+  
+                                        </li>
+                      <li class="devsite-nav-item">
+                  <a href="/web/showcase"
+           class="devsite-nav-title gc-analytics-event
+                            "
+    
+         data-category="Site-Wide Custom Events"
+     data-label="Responsive Tab: Case Studies"
+     track-type="navMenu"
+     track-metadata-eventDetail="globalMenu"
+     track-metadata-position="nav"
+     track-name="caseStudies">
+      <span class="devsite-nav-text" tooltip >
+      Case Studies
+   </span>
+        </a>
+  
+                                        </li>
+                    
+                  </ul>
+          </div>
+      </div>
+</nav>
+              </devsite-book-nav>
+      <section id="gc-wrapper">
+        <main role="main" class="devsite-main-content"
+                        >
+          <devsite-toc class="devsite-nav"
+            disabled></devsite-toc>
+          <devsite-content>
+                          
+
+<article class="devsite-article">
+  <article class="devsite-article-inner"><style>
+        /* Styles inlined from /web/styles/wf-root.css */
+.devsite-landing-page .devsite-product-description-row {
+  max-width: 100%;
+}
+
+ul.checkmarks {
+  list-style-type:none;
+  padding:0;
+}
+
+ul.checkmarks li {
+  background-image:url("//developers.google.com/maps/images/lhimages/compare-yes.svg");
+  background-repeat:no-repeat;
+  background-position:0 1px;
+  padding-left:30px;
+}
+
+h2.wf-header-title {
+  margin-top:0;
+}
+
+article.hentry:first-of-type {
+  margin-top: 0;
+}
+
+a.wf-small-link {
+ display:block;
+ margin:0 4px;
+ padding:2px 8px;
+}
+
+        </style>          <div class="devsite-banner devsite-banner-announcement"
+           >
+        <div class="devsite-banner-message">
+          <div class="devsite-banner-message-text">
+            <style>
+  .devsite-banner-announcement {
+    background-color: #e8f0fe;
+    color: #424242;
+
+  }
+  .devsite-banner-announcement :link,
+  .devsite-banner-announcement :visited {
+    background: #e8f0fe;
+    color: #039BE5;
+  }
+  .devsite-banner-announcement span.material-icons {
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+</style> Didn't make the <code>#ChromeDevSummit</code> this year? Catch all the content (and more!) in the <a href="https://www.youtube.com/playlist?list=PLNYkxOF6rcIDA1uGhqy45bqlul0VcvKMr">Chrome Dev Summit 2019</a> playlist on our <a href="https://www.youtube.com/user/ChromeDevelopers/">Chrome Developers YouTube Channel</a>.
+
+          </div>
+        </div>
+      </div>
+        
+    <div class="devsite-article-meta">
+      <ul class="devsite-breadcrumb-list">
+    <li class="devsite-breadcrumb-item
+             ">
+                    <a href="/"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="1"
+          >
+            Home
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/products"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="2"
+          >
+            Products
+      
+  </a>
+        </li>
+    <li class="devsite-breadcrumb-item
+             ">
+                <div class="devsite-breadcrumb-guillemet material-icons" aria-hidden="true"></div>
+                    <a href="/web"              class="devsite-breadcrumb-link gc-analytics-event"
+              data-category="Site-Wide Custom Events"
+              data-label="Breadcrumbs"
+              data-value="3"
+          >
+            Web
+      
+  </a>
+        </li>
+  </ul>
+          </div>
+
+        
+    <devsite-toc class="devsite-nav" devsite-toc-embedded
+                 disabled>
+    </devsite-toc>
+
+    <div class="devsite-article-body clearfix
+      ">
+
+                <section class="devsite-landing-row devsite-landing-row-1-up devsite-landing-row-50"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <iframe class="devsite-embedded-youtube-video"
+        allowfullscreen=""
+        data-autohide="1"
+        data-showinfo="0"
+        data-video-id="9Bz5TikmJ-A"
+        frameborder="0"></iframe>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+        
+
+                  <div class="devsite-landing-row-item-description-content">
+            <h4>The next billion users will virtually all be on mobile</h4> <p>
+  This presents unique challenges for web developers who must abandon
+  the limited mobile first approach in favor of a comprehensive mobile
+  strategy.
+</p> <p>
+  You can address these challenges by focusing a few key areas
+  listed below.
+</p>
+
+          </div>
+        
+        
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-2-up devsite-landing-row-cards"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/billions/images/connectivity.png"
+       srcset="https://developers.google.com/web/billions/images/connectivity_36.png 36w,https://developers.google.com/web/billions/images/connectivity_48.png 48w,https://developers.google.com/web/billions/images/connectivity_72.png 72w,https://developers.google.com/web/billions/images/connectivity_96.png 96w,https://developers.google.com/web/billions/images/connectivity_480.png 480w,https://developers.google.com/web/billions/images/connectivity_720.png 720w,https://developers.google.com/web/billions/images/connectivity_856.png 856w,https://developers.google.com/web/billions/images/connectivity_960.png 960w,https://developers.google.com/web/billions/images/connectivity_1440.png 1440w,https://developers.google.com/web/billions/images/connectivity_1920.png 1920w,https://developers.google.com/web/billions/images/connectivity_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="design-for-seamless-connectivity">
+      Design for seamless connectivity</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Low bandwidth and intermittent connectivity are the norm for many people accessing the web. Most people online still have 2G connections or "3G" that downgrades to 2G. Even by 2020, more than 10% of users will still be on 2G. Many smartphones are used offline, and users regularly turn on airplane mode to avoid data consumption.
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/fundamentals/performance/poor-connectivity#testing"
+      class="wf-small-link
+      "
+            >Test with emulated low bandwidth and high latency</a>    <a href="/web/fundamentals/performance/poor-connectivity#lie-fi"
+      class="wf-small-link
+      "
+            >Handle unreliable connectivity and "lie-fi"</a>    <a href="/web/fundamentals/codelabs/offline"
+      class="wf-small-link
+      "
+            >Design for offline</a>    <a href="/web/fundamentals/performance/optimizing-content-efficiency/eliminate-downloads"
+      class="wf-small-link
+      "
+            >Reduce the number of resource requests</a>    <a href="/web/fundamentals/performance/optimizing-content-efficiency/optimize-encoding-and-transfer"
+      class="wf-small-link
+      "
+            >Make installs and updates as small and fast as possible</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/billions/images/cost.png"
+       srcset="https://developers.google.com/web/billions/images/cost_36.png 36w,https://developers.google.com/web/billions/images/cost_48.png 48w,https://developers.google.com/web/billions/images/cost_72.png 72w,https://developers.google.com/web/billions/images/cost_96.png 96w,https://developers.google.com/web/billions/images/cost_480.png 480w,https://developers.google.com/web/billions/images/cost_720.png 720w,https://developers.google.com/web/billions/images/cost_856.png 856w,https://developers.google.com/web/billions/images/cost_960.png 960w,https://developers.google.com/web/billions/images/cost_1440.png 1440w,https://developers.google.com/web/billions/images/cost_1920.png 1920w,https://developers.google.com/web/billions/images/cost_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="conserve-data-usage">
+      Conserve data usage</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            High data cost is often a greater barrier to access than poor connectivity. Mobile users are cost-conscious; even "unlimited" plans can become expensive when roaming or if unexpected fees are applied. Many mobile users are extremely cost conscious, with good reason: for example, a 500MB data plan in India costs the same as 17 hours of minimum wage work.
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/fundamentals/design-and-ux/responsive/content#weight"
+      class="wf-small-link
+      "
+            >Understand the cost of loading page and app components</a>    <a href="/web/fundamentals/performance/optimizing-content-efficiency"
+      class="wf-small-link
+      "
+            >Reduce the amount of data required for interaction</a>    <a href="/web/fundamentals/design-and-ux/principles#home-page-and-site-navigation"
+      class="wf-small-link
+      "
+            >Streamline navigation: help users get to what they want</a>    <a href="/web/fundamentals/performance/critical-rendering-path"
+      class="wf-small-link
+      "
+            >Prioritize content display</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-2-up devsite-landing-row-cards"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/billions/images/consumption.png"
+       srcset="https://developers.google.com/web/billions/images/consumption_36.png 36w,https://developers.google.com/web/billions/images/consumption_48.png 48w,https://developers.google.com/web/billions/images/consumption_72.png 72w,https://developers.google.com/web/billions/images/consumption_96.png 96w,https://developers.google.com/web/billions/images/consumption_480.png 480w,https://developers.google.com/web/billions/images/consumption_720.png 720w,https://developers.google.com/web/billions/images/consumption_856.png 856w,https://developers.google.com/web/billions/images/consumption_960.png 960w,https://developers.google.com/web/billions/images/consumption_1440.png 1440w,https://developers.google.com/web/billions/images/consumption_1920.png 1920w,https://developers.google.com/web/billions/images/consumption_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="reduce-battery-consumption">
+      Reduce battery consumption</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Many people, even in urban areas, don't have access to a reliable and affordable power supply. This makes power conservation a critical factor in all app and content design.
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/tools/chrome-devtools/rendering-tools/forced-synchronous-layouts"
+      class="wf-small-link
+      "
+            >Avoid repaints, reflows, and required reorientations</a>    <a href="/web/fundamentals/design-and-ux/animations#avoid-animating-expensive-properties/"
+      class="wf-small-link
+      "
+            >Avoid expensive UI animations</a>    <a href="/web/fundamentals/performance/optimizing-content-efficiency/eliminate-downloads"
+      class="wf-small-link
+      "
+            >Avoid radio usage: eliminate unnecessary downloads</a>    <a href="/web/fundamentals/design-and-ux/principles"
+      class="wf-small-link
+      "
+            >Reduce user actions required to access content</a>    <a href="/web/fundamentals/design-and-ux/animations/animations-and-performance"
+      class="wf-small-link
+      "
+            >Avoid expensive animations</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/billions/images/capability.png"
+       srcset="https://developers.google.com/web/billions/images/capability_36.png 36w,https://developers.google.com/web/billions/images/capability_48.png 48w,https://developers.google.com/web/billions/images/capability_72.png 72w,https://developers.google.com/web/billions/images/capability_96.png 96w,https://developers.google.com/web/billions/images/capability_480.png 480w,https://developers.google.com/web/billions/images/capability_720.png 720w,https://developers.google.com/web/billions/images/capability_856.png 856w,https://developers.google.com/web/billions/images/capability_960.png 960w,https://developers.google.com/web/billions/images/capability_1440.png 1440w,https://developers.google.com/web/billions/images/capability_1920.png 1920w,https://developers.google.com/web/billions/images/capability_2880.png 2880w"
+       sizes="(max-width: 600px) 100vw, (max-width: 840px) 50vw, 708px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="optimize-for-device-capability">
+      Optimize for device capability</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Low spec is the norm. Globally, most new internet users have low-cost devices with basic hardware: single-core processors, 4" screens, limited memory, and limited storage.
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/fundamentals/codelabs/your-first-multi-screen-site"
+      class="wf-small-link
+      "
+            >Cater for a range of viewports and devices</a>    <a href="/web/fundamentals/performance"
+      class="wf-small-link
+      "
+            >Design for limited memory and CPU: reduce and optimize</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+  <section class="devsite-landing-row devsite-landing-row-3-up devsite-landing-row-cards"
+           
+           >
+
+      
+    
+      <div class="devsite-landing-row-group">
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/billions/images/content.png"
+       srcset="https://developers.google.com/web/billions/images/content_36.png 36w,https://developers.google.com/web/billions/images/content_48.png 48w,https://developers.google.com/web/billions/images/content_72.png 72w,https://developers.google.com/web/billions/images/content_96.png 96w,https://developers.google.com/web/billions/images/content_480.png 480w,https://developers.google.com/web/billions/images/content_720.png 720w,https://developers.google.com/web/billions/images/content_856.png 856w,https://developers.google.com/web/billions/images/content_960.png 960w,https://developers.google.com/web/billions/images/content_1440.png 1440w,https://developers.google.com/web/billions/images/content_1920.png 1920w,https://developers.google.com/web/billions/images/content_2880.png 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="build-multi-device-content">
+      Build multi-device content</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Large-layout, graphics-heavy content frustrates users and discourages them from using your app or site. Content that is too wide or too tall is overlooked by some users and deliberately avoided by others — and excess content adds page weight and data cost.
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/fundamentals/design-and-ux/responsive/content#viewport"
+      class="wf-small-link
+      "
+            >Design content to work well across different viewport sizes</a>    <a href="/web/fundamentals/design-and-ux/responsive/content#redundant"
+      class="wf-small-link
+      "
+            >Eliminate redundant content</a>    <a href="/web/fundamentals/design-and-ux/responsive/content#write"
+      class="wf-small-link
+      "
+            >Write for mobile</a>    <a href="https://www.ampproject.org/"
+      class="wf-small-link
+      "
+            >Consider AMP HTML</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/billions/images/monetization.png"
+       srcset="https://developers.google.com/web/billions/images/monetization_36.png 36w,https://developers.google.com/web/billions/images/monetization_48.png 48w,https://developers.google.com/web/billions/images/monetization_72.png 72w,https://developers.google.com/web/billions/images/monetization_96.png 96w,https://developers.google.com/web/billions/images/monetization_480.png 480w,https://developers.google.com/web/billions/images/monetization_720.png 720w,https://developers.google.com/web/billions/images/monetization_856.png 856w,https://developers.google.com/web/billions/images/monetization_960.png 960w,https://developers.google.com/web/billions/images/monetization_1440.png 1440w,https://developers.google.com/web/billions/images/monetization_1920.png 1920w,https://developers.google.com/web/billions/images/monetization_2880.png 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="transactions-monetization-think-global">
+      Transactions & monetization: think global</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Payment systems are inaccessible for many people on the web. Many users globally don't have bank accounts and don't use credit cards — including 8% of US households. Many payment systems don't work well on small viewports or with unreliable connectivity.
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="/web/fundamentals/design-and-ux/principles#commerce-and-conversion"
+      class="wf-small-link
+      "
+            >Streamline transactions</a>    <a href="/web/fundamentals/design-and-ux/input/forms"
+      class="wf-small-link
+      "
+            >Streamline forms</a>    <a href="/web/fundamentals/design-and-ux/principles#usability-and-form-factor"
+      class="wf-small-link
+      "
+            >Design orientation-friendly layouts for small screens</a></div>
+              </div>
+    </div>
+      
+</div>
+              <div class="devsite-landing-row-item"
+     
+     >
+
+  
+    <div class="devsite-landing-row-item-media
+            ">
+      <figure class="devsite-landing-row-item-image">
+          <img alt=""
+       src="https://developers.google.com/web/billions/images/localization.png"
+       srcset="https://developers.google.com/web/billions/images/localization_36.png 36w,https://developers.google.com/web/billions/images/localization_48.png 48w,https://developers.google.com/web/billions/images/localization_72.png 72w,https://developers.google.com/web/billions/images/localization_96.png 96w,https://developers.google.com/web/billions/images/localization_480.png 480w,https://developers.google.com/web/billions/images/localization_720.png 720w,https://developers.google.com/web/billions/images/localization_856.png 856w,https://developers.google.com/web/billions/images/localization_960.png 960w,https://developers.google.com/web/billions/images/localization_1440.png 1440w,https://developers.google.com/web/billions/images/localization_1920.png 1920w,https://developers.google.com/web/billions/images/localization_2880.png 2880w"
+       sizes="(max-width: 840px) 50vw, 464px">
+  
+  </figure>
+  </div>
+
+
+        <div class="devsite-landing-row-item-description"
+         >
+
+      
+
+      <div class="devsite-landing-row-item-body">
+        
+                    <h3 id="plan-for-localization">
+      Plan for localization</h3>
+    
+    
+
+                  <div class="devsite-landing-row-item-description-content">
+            Localization can help you access new markets. Many websites are only published in English, but English is not the first language of most people online. Only 5.52% of the world's population are native English speakers and US or European cultural conventions may not be familiar or intuitive. Instructions or prompts that are succinct and compact in English may be verbose and obtrusive in other languages.
+
+          </div>
+        
+        
+                  <div class="devsite-landing-row-item-buttons">
+      <a href="https://support.google.com/webmasters/answer/182192/"
+      class="wf-small-link
+      "
+            >Architect your site to enable localization</a></div>
+              </div>
+    </div>
+      
+</div>
+            </div>
+    
+  
+  </section>
+
+          </div>
+
+    
+    
+          </article>
+</article>
+
+
+  <devsite-google-survey type="gcs" site-id=ylj5ifxusvvmr4pp6ae5lwrctq></devsite-google-survey>
+
+
+                      </devsite-content>
+        </main>
+        <devsite-footer-promos class="devsite-footer">
+                      <nav class="devsite-footer-promos nocontent">
+  <ul class="devsite-footer-promos-list">
+        <li class="devsite-footer-promo">
+      <a href="https://blog.chromium.org"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 1)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/chrome_chromium_64dp.png"
+             alt="Chromium Blog">
+                Chromium Blog
+      </a>
+      <div class="devsite-footer-promo-description">The latest news on the Chromium blog.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://github.com/googlechrome"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 2)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-github.svg"
+             alt="GitHub">
+                GitHub
+      </a>
+      <div class="devsite-footer-promo-description">Fork our code samples and other open-source projects.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="https://twitter.com/chromiumdev"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 3)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="/site-assets/logo-twitter.svg"
+             alt="Twitter">
+                Twitter
+      </a>
+      <div class="devsite-footer-promo-description">Connect with @ChromiumDev on Twitter.</div>
+    </li>
+        <li class="devsite-footer-promo">
+      <a href="/web/shows"
+         class="devsite-footer-promo-title gc-analytics-event"
+         data-category="Site-Wide Custom Events"
+                         data-label="Footer Promo Link (index 4)"
+              >
+                        <img class="devsite-footer-promo-icon"
+             src="https://www.gstatic.com/images/icons/material/product/2x/youtube_64dp.png"
+             alt="Videos">
+                Videos
+      </a>
+      <div class="devsite-footer-promo-description">Check out our videos.</div>
+    </li>
+      </ul>
+</nav>
+
+                  </devsite-footer-promos>
+        <devsite-footer-linkboxes class="devsite-footer">
+                      <nav class="devsite-footer-linkboxes nocontent">
+    <ul class="devsite-footer-linkboxes-list">
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Key Topics</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/billions"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Building for Billions
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://developers.chrome.com/extensions/api_index"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Chrome Extension Docs
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/site-kit"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Site-Kit
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/feedback"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Developer Feedback Program
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/progressive-web-apps"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 5)"           >
+            Progressive Web Apps
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Training and Partners</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/ilt"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            Instructor Led Training
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/shows/udacity"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            Web Courses at Udacity
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/agencies"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Agencies
+          </a>
+        </li>
+              </ul>
+    </li>
+        <li class="devsite-footer-linkbox ">
+    <h3 class="devsite-footer-linkbox-heading">Contribute</h3>      <ul class="devsite-footer-linkbox-list">
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://github.com/google/WebFundamentals/issues"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 1)"           >
+            File an Issue
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="https://github.com/google/WebFundamentals"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 2)"           >
+            View Page Source
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/resources"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 3)"           >
+            Resources
+          </a>
+        </li>
+                <li class="devsite-footer-linkbox-item">
+          <a href="/web/resources/translations"
+             class="devsite-footer-linkbox-link
+                    gc-analytics-event"
+             data-category="Site-Wide Custom Events"
+                        data-label="Footer Link (index 4)"           >
+            Translating
+          </a>
+        </li>
+              </ul>
+    </li>
+      </ul>
+  </nav>
+                  </devsite-footer-linkboxes>
+        <devsite-footer-utility class="devsite-footer">
+                      
+<div class="devsite-footer-utility nocontent">
+    <nav class="devsite-footer-sites">
+    <a href="https://developers.google.com/"
+       class="devsite-footer-sites-logo-link gc-analytics-event"
+       data-category="Site-Wide Custom Events"
+       data-label="Footer Google Developers Link">
+      <img class="devsite-footer-sites-logo"
+           src="/_static/images/lockup-developers.svg"
+           alt="Google Developers">
+    </a>
+    <ul class="devsite-footer-sites-list">
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.android.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Android Link"
+                  >
+          Android
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//developer.chrome.com/home"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Chrome Link"
+                  >
+          Chrome
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//firebase.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Firebase Link"
+                  >
+          Firebase
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="//cloud.google.com"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer Google Cloud Platform Link"
+                  >
+          Google Cloud Platform
+        </a>
+      </li>
+            <li class="devsite-footer-sites-item">
+        <a href="/products"
+           class="devsite-footer-sites-link
+                  gc-analytics-event"
+           data-category="Site-Wide Custom Events"
+                    data-label="Footer All products Link"
+                  >
+          All products
+        </a>
+      </li>
+          </ul>
+  </nav>
+  
+  <nav class="devsite-footer-utility-links">
+        <ul class="devsite-footer-utility-list">
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="/terms/site-terms"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Terms link">
+          Terms
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 ">
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//policies.google.com/privacy"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Privacy link">
+          Privacy
+        </a>
+              </li>
+            <li class="devsite-footer-utility-item
+                 devsite-footer-utility-button">
+                <span class="devsite-footer-utility-description">Sign up for the Google Developers newsletter</span>
+                        <a class="devsite-footer-utility-link gc-analytics-event"
+           href="//services.google.com/fb/forms/googledevelopersnewsletter/?utm_medium=referral&amp;utm_source=google-products&amp;utm_team=googledevs&amp;utm_campaign=201611-newsletter-launch"
+           data-category="Site-Wide Custom Events"
+           data-label="Footer Subscribe link">
+          Subscribe
+        </a>
+              </li>
+          </ul>
+    
+    <devsite-language-selector>
+  <devsite-select class="devsite-language-selector-menu">
+    <select class="devsite-language-selector-select"
+            name="language"
+            track-name="click"
+            track-type="languageSelector">
+                <option>Language</option>
+              <option value="id"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="id"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Bahasa Indonesia
+      </option>
+          <option value="de"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="de"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Deutsch
+      </option>
+          <option value="en"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="en"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        English
+      </option>
+          <option value="es"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="es"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Español
+      </option>
+          <option value="fr"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="fr"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Français
+      </option>
+          <option value="pt_br"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="pt_br"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Português – Brasil
+      </option>
+          <option value="ru"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ru"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        Русский
+      </option>
+          <option value="zh_cn"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_cn"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 简体
+      </option>
+          <option value="zh_tw"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="zh_tw"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        中文 – 繁體
+      </option>
+          <option value="ja"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ja"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        日本語
+      </option>
+          <option value="ko"
+              track-metadata-original-language="en"
+              track-metadata-selected-language="ko"
+              track-name="changed"
+              track-type="languageSelector"
+            >
+        한국어
+      </option>
+        </select>
+  </devsite-select>
+</devsite-language-selector>
+
+  </nav>
+</div>
+                  </devsite-footer-utility>
+      </section></section>
+    <devsite-sitemask></devsite-sitemask>
+    <devsite-snackbar                   ></devsite-snackbar>    <devsite-tooltip ></devsite-tooltip>
+    <devsite-heading-link></devsite-heading-link>
+    <devsite-analytics>
+              <script type="application/json" analytics>[{"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Web", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-24532603-1"}, {"metrics": {"ratings_value": "metric1", "ratings_count": "metric2"}, "dimensions": {"dimension6": "en", "dimension4": "Web", "dimension5": "en", "dimension3": false, "dimension1": "Signed out", "dimension8": null}, "gaid": "UA-52746336-1"}]</script>
+<script type="application/json" gtm>{}</script>
+          </devsite-analytics>
+        <script>
+    (function(d,e,v,s,i,t,E){d['GoogleDevelopersObject']=i;
+    t=e.createElement(v);t.async=1;t.src=s;E=e.getElementsByTagName(v)[0];
+    E.parentNode.insertBefore(t,E);})(window, document, 'script',
+    'https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/js/app_loader.js', '[1,"en",null,"/js/devsite_app.js","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers","https://developers-dot-devsite-v2-prod.appspot.com",1,null,["/_pwa/developers/manifest.json","/_static/images/video-placeholder.svg","https://www.gstatic.com/devrel-devsite/prod/v172e5dffd78b32f4b12f8112b00e940d4993af48229fac5346097b33edb0f543/developers/images/favicon.png","https://fonts.googleapis.com/css?family=Google+Sans:400,500|Roboto:400,400italic,500,500italic,700,700italic|Roboto+Mono:400,500,700|Material+Icons"],1]')
+  </script>  </body>
+</html>
